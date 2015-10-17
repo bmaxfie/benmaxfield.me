@@ -1,0 +1,17 @@
+'''
+Created on Oct 17, 2015
+
+@author: Ben Maxfield
+'''
+
+class Scripter(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        

@@ -25,9 +25,7 @@
 		</div>
 	</div>
 	<div id="console"></div>
-	<div id="dashboard">
-		{{ titles }}
-	</div>
+	<div id="dashboard"></div>
   <script src="front.js"></script>
 </body>
 </html>

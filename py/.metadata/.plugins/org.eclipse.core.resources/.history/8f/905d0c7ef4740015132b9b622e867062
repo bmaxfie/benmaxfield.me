@@ -1,0 +1,24 @@
+'''
+Created on Oct 17, 2015
+
+@author: Ben Maxfield
+'''
+
+from apscheduler.schedulers.background import BackgroundScheduler
+
+class Scripter():
+    '''
+    classdocs
+    '''
+    scheduler = None
+
+
+    def __init__(self, params):
+        scheduler = BackgroundScheduler()
+        scheduler.start()
+        
+        
+    def update(self):
+        '''
+        Updates Script and Timeline
+        '''

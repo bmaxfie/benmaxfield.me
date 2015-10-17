@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Boilermake15/static&apos;" deleteContents="false" description="Delete resource &apos;Boilermake15/static&apos;" element1="/Boilermake15/static" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1445098261152"/>
+</session>

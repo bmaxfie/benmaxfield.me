@@ -1,0 +1,21 @@
+'''
+Created on Oct 17, 2015
+
+@author: Ben Maxfield
+'''
+
+class Scripter():
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self):
+        '''
+        Constructor
+        '''
+        
+    def update(self):
+        '''
+        Updates Script and Timeline
+        '''
