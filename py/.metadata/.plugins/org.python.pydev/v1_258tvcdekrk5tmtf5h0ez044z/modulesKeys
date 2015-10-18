@@ -532,6 +532,7 @@ ensurepip.__main__|C:\Python27\lib\ensurepip\__main__.py
 ensurepip._uninstall|C:\Python27\lib\ensurepip\_uninstall.py
 errno
 exceptions
+feedparser|C:\Python27\lib\site-packages\feedparser.py
 filecmp|C:\Python27\lib\filecmp.py
 fileinput|C:\Python27\lib\fileinput.py
 flask.__init__|C:\Python27\lib\site-packages\flask\__init__.py

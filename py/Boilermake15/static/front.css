@@ -68,3 +68,10 @@ div#dashboard {
 	background-color: #0000FF;
 	float: right;
 }
+ul {
+	list-style: none;
+}
+a.SDlinks {
+	list-style: none;
+	color: #FFFFFF;
+}

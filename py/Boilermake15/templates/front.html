@@ -25,7 +25,15 @@
 		</div>
 	</div>
 	<div id="console"></div>
-	<div id="dashboard"></div>
+	<div id="dashboard">
+		{% if titles %}
+			<ul>
+			{% for i in range(0,3) %}
+				<a class="SDlinks" href={{ links[i] }}><li>{{ titles[i] }}</h1>
+			{% endfor %}
+			</ul>
+		{% endif %}
+	</div>
   <script src="../static/front.js"></script>
 </body>
 </html>

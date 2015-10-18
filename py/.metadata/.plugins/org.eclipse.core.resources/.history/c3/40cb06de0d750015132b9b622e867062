@@ -1,0 +1,36 @@
+'''
+Created on Oct 17, 2015
+
+@author: Ben Maxfield
+'''
+
+from apscheduler.schedulers.background import BackgroundScheduler
+# from lxml import etree
+#import xml.etree.ElementTree as lxml
+import feedparser
+from urllib2 import urlopen
+
+class Scripter():
+    
+    scheduler = None
+    ScienceDaily = None
+
+
+    def __init__(self):
+        self.update()
+        scheduler = BackgroundScheduler()
+        scheduler.start()
+        scheduler.add_job(self.update, 'interval', hours=1)
+        
+    def update(self):
+        feed = feedparser.parse('http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml')
+        print(feed.entries[0].title)
+        print(feed.entries[0].link)
+        #page = urlopen('http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml')
+        #print(page.read())
+        #html = page.read()
+        #xml = lxml.parse(html)
+        #print(xml.__sizeof__())
+        #item = xml.getroot().find('channel')[1].keys()
+        #print(item)
+        

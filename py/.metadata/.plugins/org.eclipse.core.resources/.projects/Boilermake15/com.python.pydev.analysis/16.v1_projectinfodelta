@@ -1,8 +1,12 @@
 INSTUPscripter
 C:\Users\Ben Maxfield\Documents\PERSONALS\Website_Boilermake15\py\Boilermake15\scripter.py
-INFOS:&&1|1|2|0&&3|3|2|1&&2|4|2|1&&2|5|2|1
+INFOS:&&1|1|2|0&&3|3|2|1&&3|4|2|1&&3|5|2|1&&3|6|2|1&&2|7|2|1&&2|8|2|1&&3|6|2|9
 scheduler=3
+GithubHTML=6
+SDtitles=4
 Scripter=1
-update=5
+Scripter.update=9
+update=8
+SDlinks=5
 scripter=2
-__init__=4
+__init__=7

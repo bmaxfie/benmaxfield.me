@@ -1,8 +1,8 @@
-INSTUPscripter
-C:\Users\Ben Maxfield\Documents\PERSONALS\Website_Boilermake15\py\Boilermake15\scripter.py
-INFOS:&&1|1|2|0&&3|3|2|1&&2|4|2|1&&2|5|2|1
-scheduler=3
-Scripter=1
-update=5
-scripter=2
-__init__=4
+INSTUPmain
+C:\Users\Ben Maxfield\Documents\PERSONALS\Website_Boilermake15\py\Boilermake15\main.py
+INFOS:&&3|1|2|0&&3|3|2|0&&2|4|2|0&&2|5|2|0
+app=1
+redirect=4
+front_page=5
+main=2
+scripter=3

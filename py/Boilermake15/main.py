@@ -6,12 +6,12 @@ app = Flask(__name__)
 scripter = Scripter()
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
+def redirect():
+    front_page()
 
 @app.route('/front')
 def front_page():    
-    return render_template('front.html', titles=scripter.SDtitles)
+    return render_template('front.html', titles=scripter.SDtitles, links=scripter.SDlinks)
 
 if __name__ == '__main__':
     app.run()
