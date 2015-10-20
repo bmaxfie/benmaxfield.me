@@ -4,9 +4,9 @@ Created on Oct 17, 2015
 @author: Ben Maxfield
 '''
 
+from flask import Markup
 from apscheduler.schedulers.background import BackgroundScheduler
-from lxml import html
-#import xml.etree.ElementTree as lxml
+from lxml import html, etree
 import requests
 import feedparser
 from urllib2 import urlopen
@@ -17,6 +17,7 @@ class Scripter():
     SDtitles = ['', '', '']
     SDlinks = ['', '', '']
     GithubHTML = None
+    GithubCSS = None
 
 
     def __init__(self):
@@ -32,12 +33,17 @@ class Scripter():
             self.SDtitles[i] = feed.entries[i].title
             self.SDlinks[i] = feed.entries[i].link
         
-        # Gets bmaxfie@Github data
+        # Gets bmaxfie@Github data and .css
         page = requests.get('https://github.com/bmaxfie')
         tree = html.fromstring(page.text)
-        self.GithubHTML = tree.xpath('//div[@class="boxed-group flush"]')[1]
-        print(self.GithubHTML)
+        self.GithubHTML = Markup(etree.tostring(tree.xpath('//div[@class="boxed-group flush"]')[1], pretty_print=True))
         
+        strings = ""
+        for element in tree.xpath('//link[@rel="stylesheet"]'):
+            strings = strings + etree.tostring(element, pretty_print=True)
+        self.GithubCSS = Markup(strings)
+        #self.GithubCSS = Markup(etree.tostring(tree.xpath('//link[@rel="stylesheet"]'), pretty_print=True))
+        #print(etree.tostring(self.GithubHTML, pretty_print=True))
         #page = urlopen('http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml')
         #print(page.read())
         #html = page.read()
