@@ -1,13 +1,14 @@
-INSTUPscripter
-C:\Users\Ben Maxfield\Documents\PERSONALS\Website_Boilermake15\py\Boilermake15\scripter.py
-INFOS:&&1|1|2|0&&3|3|2|1&&3|4|2|1&&3|5|2|1&&3|6|2|1&&3|7|2|1&&2|8|2|1&&2|9|2|1&&3|6|2|10&&3|7|2|10
-scheduler=3
-GithubHTML=6
-SDtitles=4
-Scripter=1
-Scripter.update=10
-update=9
-SDlinks=5
-scripter=2
-__init__=8
-GithubCSS=7
+INSTUPmain
+C:\Users\Ben Maxfield\Documents\PERSONALS\Website_Boilermake15\py\Boilermake15\main.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&2|7|2|0&&2|8|2|0&&2|9|2|0&&2|10|2|0&&2|11|2|0
+app=4
+redirect_front_page=7
+allowed_file=8
+ALLOWED_EXTENSIONS=3
+front_page=9
+admin=5
+resume_page=11
+main=2
+scripter=6
+upload_file=10
+UPLOAD_FOLDER=1

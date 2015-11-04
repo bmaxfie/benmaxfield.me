@@ -1,0 +1,17 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+</head>
+
+<body>
+	{{ url_for('admin.static', filename='Resume.pdf')) }}
+  <embed src="127.0.0.1:5000/res/Resume.pdf" width="500px" height="350px" type='application/pdf'>
+</body>
+</html>

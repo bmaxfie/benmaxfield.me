@@ -1,0 +1,26 @@
+from flask import Flask, url_for, render_template, send_file, redirect
+from scripter import Scripter
+
+UPLOAD_FOLDER = '/res/uploads'
+ALLOWED_EXTENSIONS = set(['txt', 'csv'])
+
+app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+scripter = Scripter()
+
+@app.route('/')
+def redirect_front_page():
+    return redirect("/front", code=302)
+
+@app.route('/front')
+def front_page():
+    return render_template('front.html', titles=scripter.SDtitles, links=scripter.SDlinks, githubHTML=scripter.GithubHTML, githubCSS=scripter.GithubCSS)
+
+@app.route('/Resume102715.html')
+def resume_page():
+    return render_template('Resume102715.html')
+    #return send_file('Resume.10.27.15.pdf', mimetype='application/pdf', filename='res/Resume.10.27.15.pdf')
+
+if __name__ == '__main__':
+    app.run()

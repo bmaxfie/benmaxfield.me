@@ -1,0 +1,20 @@
+from flask import Flask, url_for, render_template, send_file
+from scripter import Scripter
+
+app = Flask(__name__)
+
+scripter = Scripter()
+
+@app.route('/')
+@app.route('/front')
+def front_page():    
+    return render_template('front.html', titles=scripter.SDtitles, links=scripter.SDlinks, 
+                           githubHTML=scripter.GithubHTML, githubCSS=scripter.GithubCSS)
+
+@app.route('/Resume102715.html')
+def resume():
+    return render_template('Resume.10.27.15.html')
+    #return send_file('Resume.10.27.15.pdf', mimetype='application/pdf', filename='res/Resume.10.27.15.pdf')
+
+if __name__ == '__main__':
+    app.run()

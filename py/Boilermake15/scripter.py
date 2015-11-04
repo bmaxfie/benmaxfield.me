@@ -14,6 +14,7 @@ from urllib2 import urlopen
 class Scripter():
     
     scheduler = None
+    Script = "STARTING WEB SCRAPER...\n===========================================\nGETTING first target:\n\"http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml\"\n.\n.\n.\n"
     SDtitles = ['', '', '']
     SDlinks = ['', '', '']
     GithubHTML = None
