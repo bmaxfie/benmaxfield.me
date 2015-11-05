@@ -45,7 +45,7 @@ def upload_file():
 
 @app.route('/Resume.html')
 def resume_page():
-    print(os.getcwd())
+    print(url_for('Resume.pdf'))
     #print(lookup_url('res', filename='Resume.pdf'))
     return render_template('Resume.html')
     #return send_file('Resume.10.27.15.pdf', mimetype='application/pdf', filename='res/Resume.10.27.15.pdf')

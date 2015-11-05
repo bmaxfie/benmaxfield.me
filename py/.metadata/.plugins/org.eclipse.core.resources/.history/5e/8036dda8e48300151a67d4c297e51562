@@ -23,7 +23,7 @@
 		<h1 class="name">BEN MAXFIELD</h1>
 		<div class="row">
 			<p class="links left"></br>Github</p>
-			<h3 class="description">Freshman at Purdue University studying Computer Science. </br>Specializing in Embedded Software. </br>Member of IEEE ROV Embedded Software Team. </br><a href={{ url_for('static', filename="Resume.pdf", _external=True) }}>Resume</a></h3>
+			<h3 class="description">Freshman at Purdue University studying Computer Science. </br>Specializing in Embedded Software. </br>Member of IEEE ROV Embedded Software Team. </br><a href="./res/Resume.html">Resume</a></h3>
 			<p class="links right"></br>Facebook</p>
 		</div>
 	</div>

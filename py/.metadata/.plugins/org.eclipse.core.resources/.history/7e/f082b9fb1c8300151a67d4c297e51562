@@ -27,10 +27,10 @@ def front_page():
 @app.route('/front/upload', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
-        thisFile = request.files['file']
-        if thisFile and allowed_file(thisFile.filename):
-            filename = secure_filename(thisFile.filename)
-            thisFile.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        file = request.files['file']
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('uploaded_file', filename = filename))
     return '''
     <!doctype html>
@@ -45,7 +45,6 @@ def upload_file():
 
 @app.route('/Resume.html')
 def resume_page():
-    print(os.getcwd())
     #print(lookup_url('res', filename='Resume.pdf'))
     return render_template('Resume.html')
     #return send_file('Resume.10.27.15.pdf', mimetype='application/pdf', filename='res/Resume.10.27.15.pdf')
