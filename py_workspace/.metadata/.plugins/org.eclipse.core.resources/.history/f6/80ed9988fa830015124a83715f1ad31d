@@ -1,0 +1,78 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+	color: #FFFFFF;
+}
+
+
+
+
+div#header {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+h1.name {
+	padding: 10px 0px;
+}
+
+.row {
+	display: table;
+	width: 100%;
+}
+
+h3.description {
+	width: 500px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	float: clear;
+}
+
+p.links {
+	vertical-align: middle;
+	display: table-cell;
+	width: 50px;
+}
+p.left {
+	float: left;
+}
+p.right {
+	float: right;
+}
+
+
+
+
+div#console {
+	height: 100px;
+	width: 45%;
+	background-color: #00FFFF;
+	float: left;
+}
+
+
+
+
+
+div#dashboard {
+	height: inherit;
+	width: 60%;	
+	background-color: #0000FF;
+	float: right;
+	color: #FFFFFF
+}
+ul {
+	list-style: none;
+}
+a.SDlinks {
+	list-style: none;
+	color: #FFFFFF;
+}

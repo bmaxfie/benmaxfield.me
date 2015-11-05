@@ -53,7 +53,7 @@ p.right {
 
 div#console {
 	height: 100px;
-	width: 50%;
+	width: 40%;
 	background-color: #00FFFF;
 	float: left;
 }
@@ -63,10 +63,11 @@ div#console {
 
 
 div#dashboard {
-	height: 100px;
-	width: 50%;	
+	height: inherit;
+	width: 60%;	
 	background-color: #0000FF;
 	float: right;
+	color: #FFFFFF
 }
 ul {
 	list-style: none;
