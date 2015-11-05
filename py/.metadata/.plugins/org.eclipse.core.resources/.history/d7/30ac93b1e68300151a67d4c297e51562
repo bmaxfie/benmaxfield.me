@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>BEN MAXFIELD</title>
+  <meta name="description" content="Ben Maxfield's Personal Website">
+  <meta name="author" content="Ben Maxfield">
+
+  <link rel="stylesheet" href="../static/front.css">
+  {% if githubCSS %}
+  	{{ githubCSS }}
+  {% endif %}
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="header">
+		<h1 class="name">BEN MAXFIELD</h1>
+		<div class="row">
+			<p class="links left"></br>Github</p>
+			<h3 class="description">Freshman at Purdue University studying Computer Science. </br>Specializing in Embedded Software. </br>Member of IEEE ROV Embedded Software Team. </br><a href={{ url_for('static', filename="Resume.pdf", _external=True) }}>Resume</a></h3>
+			<p class="links right"></br>Facebook</p>
+		</div>
+	</div>
+	<div id="console"></div>
+	<div id="dashboard">
+		{% if titles %}
+			<ul>
+				<li>Science Daily from: </li>
+			{% for i in range(0,3) %}
+				<a class="SDlinks" href={{ links[i] }}><li>{{ titles[i] }}</li></a>
+			{% endfor %}
+			</ul>
+		{% endif %}
+		</br>
+		</br>
+		{% if githubHTML %}
+			{{ githubHTML }}
+		{% endif %}
+	</div>
+  <script src="../static/front.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 import os
+from time import clock
 from flask import Flask, url_for, render_template, send_file, redirect, request, Blueprint
 from werkzeug import secure_filename
 from scripter import Scripter
@@ -13,16 +14,22 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 scripter = Scripter()
 
 
-@app.route('/')
-def redirect_front_page():
-    return redirect("/front", code=302)
+def getSDtimediff():
+    secs = int((clock() - scripter.SDtimestamp) % 60)
+    mins = int((clock() - scripter.SDtimestamp) / 60)
+    return `mins` + " mins, " + `secs` + " secs"
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
+@app.route('/')
+def redirect_front_page():
+    return redirect("/front", code=302)
+
 @app.route('/front')
 def front_page():
-    return render_template('/front.html', titles=scripter.SDtitles, links=scripter.SDlinks, githubHTML=scripter.GithubHTML, githubCSS=scripter.GithubCSS)
+    print(scripter.SDtimestamp)
+    return render_template('/front.html', titles=scripter.SDtitles, links=scripter.SDlinks, githubHTML=scripter.GithubHTML, githubCSS=scripter.GithubCSS, timediff=getSDtimediff())
 
 @app.route('/front/upload', methods=['GET', 'POST'])
 def upload_file():

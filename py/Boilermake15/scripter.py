@@ -4,12 +4,14 @@ Created on Oct 17, 2015
 @author: Ben Maxfield
 '''
 
+from time import clock
 from flask import Markup
 from apscheduler.schedulers.background import BackgroundScheduler
 from lxml import html, etree
 import requests
 import feedparser
 from urllib2 import urlopen
+from __builtin__ import int
 
 class Scripter():
     
@@ -25,6 +27,7 @@ class Scripter():
         '''
     SDtitles = ['', '', '']
     SDlinks = ['', '', '']
+    SDtimestamp = 0
     GithubHTML = None
     GithubCSS = None
 
@@ -41,8 +44,9 @@ class Scripter():
         for i in range(0,3):
             self.SDtitles[i] = feed.entries[i].title
             self.SDlinks[i] = feed.entries[i].link
+        self.SDtimestamp = clock()
         
-        # Gets bmaxfie@Github data and .css
+        # Gets bmaxfie@Github public data and .css from page
         page = requests.get('https://github.com/bmaxfie')
         tree = html.fromstring(page.text)
         self.GithubHTML = Markup(etree.tostring(tree.xpath('//div[@class="boxed-group flush"]')[1], pretty_print=True))
