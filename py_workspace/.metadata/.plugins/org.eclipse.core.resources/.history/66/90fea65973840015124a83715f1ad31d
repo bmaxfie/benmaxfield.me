@@ -1,0 +1,189 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+	color: #FFFFFF;
+}
+
+
+
+
+div#header {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+h1.name {
+	padding: 10px 0px;
+}
+
+.row {
+	display: table;
+	width: 100%;
+}
+
+h3.description {
+	width: 500px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	float: clear;
+}
+
+p.links {
+	vertical-align: middle;
+	display: table-cell;
+	width: 50px;
+}
+p.left {
+	float: left;
+}
+p.right {
+	float: right;
+}
+
+
+
+
+div#console {
+	height: inherit;
+	width: 40%;
+	background-color: #00FFFF;
+	float: left;
+}
+@keyframes blink {
+	0% { color: #00FFFF; }
+	100% { color: #FFFFFF; }
+}
+@-webkit-keyframes blink {
+	0% { color: #00FFFF; }
+	100% { color: #FFFFFF; }
+}
+@-moz-keyframes blink {
+	0% { color: #00FFFF; }
+	100% { color: #FFFFFF; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+/*TODO:*/
+/*font-family: "Consolas";*/
+.script {
+	-webkit-animation-name: blink; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    -moz-animation-name: blink; /* Chrome, Safari, Opera */
+    -moz-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    -moz-animation-delay: 2s; /* Chrome, Safari, Opera */
+    -ms-animation-name: blink; /* Chrome, Safari, Opera */
+    -ms-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    -ms-animation-delay: 2s; /* Chrome, Safari, Opera */
+    -o-animation-name: blink; /* Chrome, Safari, Opera */
+    -o-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    -o-animation-delay: 2s; /* Chrome, Safari, Opera */
+	animation-name: blink;
+	animation-delay: 2s;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	color: #FFFFFF;
+}
+#script1 {
+	animation-delay: 2s;
+}
+#1 {
+	color: #FFFFFF;
+}
+
+
+
+
+
+div#dashboard {
+	height: inherit;
+	width: 60%;	
+	background-color: #DDDDDD;
+	float: right;
+	color: #FFFFFF
+}
+@keyframes linkfadein {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+div.boxed-group.flush {
+	opacity: 0;
+	animation-delay: 3s;
+	animation-duration: 1s;
+	animation-name: linkfadein;
+	-webkit-animation-delay: 3s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: linkfadein;
+	-moz-animation-delay: 3s;
+	-moz-animation-duration: 1s;
+	-moz-animation-name: linkfadein;
+	-ms-animation-delay: 3s;
+	-ms-animation-duration: 1s;
+	-ms-animation-name: linkfadein;
+	-o-animation-delay: 3s;
+	-o-animation-duration: 1s;
+	-o-animation-name: linkfadein;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+li h4 {
+	opacity: 0;
+	animation-delay: 4.5s;
+	animation-duration: 0.5s;
+	animation-name: linkfadein;
+	-webkit-animation-name: linkfadein;
+	-moz-animation-name: linkfadein;
+	-ms-animation-name: linkfadein;
+	-o-animation-name: linkfadein;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+ul {
+	list-style: none;
+}
+a.SDlinks {
+	opacity: 0;
+	list-style: none;
+	color: #FFFFFF;
+	animation-delay: 5s;
+	animation-duration: 1s;
+	animation-name: linkfadein;
+	-webkit-animation-delay: 5s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: linkfadein;
+	-moz-animation-delay: 5s;
+	-moz-animation-duration: 1s;
+	-moz-animation-name: linkfadein;
+	-ms-animation-delay: 5s;
+	-ms-animation-duration: 1s;
+	-ms-animation-name: linkfadein;
+	-o-animation-delay: 5s;
+	-o-animation-duration: 1s;
+	-o-animation-name: linkfadein;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	
+}

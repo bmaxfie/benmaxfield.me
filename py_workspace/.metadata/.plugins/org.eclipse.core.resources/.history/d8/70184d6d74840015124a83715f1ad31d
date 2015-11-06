@@ -1,0 +1,212 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+	color: #FFFFFF;
+}
+
+
+
+
+div#header {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+h1.name {
+	padding: 10px 0px;
+}
+
+.row {
+	display: table;
+	width: 100%;
+}
+
+h3.description {
+	width: 500px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	float: clear;
+}
+
+p.links {
+	vertical-align: middle;
+	display: table-cell;
+	width: 50px;
+}
+p.left {
+	float: left;
+}
+p.right {
+	float: right;
+}
+
+
+
+
+div#console {
+	height: inherit;
+	width: 40%;
+	background-color: #00FFFF;
+	float: left;
+}
+@keyframes blink {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+/*TODO:*/
+/*font-family: "Consolas";*/
+.script {
+	opacity: 0;
+	-webkit-animation-name: blink; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.25; /* Chrome, Safari, Opera */
+    -moz-animation-name: blink; /* Chrome, Safari, Opera */
+    -moz-animation-duration: 0.25s; /* Chrome, Safari, Opera */
+    -ms-animation-name: blink; /* Chrome, Safari, Opera */
+    -ms-animation-duration: 0.25s; /* Chrome, Safari, Opera */
+    -o-animation-name: blink; /* Chrome, Safari, Opera */
+    -o-animation-duration: 0.25s; /* Chrome, Safari, Opera */
+	animation-name: blink;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	color: #FFFFFF;
+}
+#script1 { animation-delay: 0s; }
+#script2 { animation-delay: 0.25s; }
+#script3 { animation-delay: 0.25s; }
+#script4 { animation-delay: 0.25s; }
+#script5 { animation-delay: 0.25s; }
+#script6 { animation-delay: 2s; }
+#script7 { animation-delay: 2s; }
+#script8 { animation-delay: 2.2s; }
+#script9 { animation-delay: 2.7s; }
+#script10 { animation-delay: 3.2s; }
+#script11 { animation-delay: 4s; }
+#script12 { animation-delay: 4s; }
+#script13 { animation-delay: 4s; }
+#script14 { animation-delay: 4s; }
+#script15 { animation-delay: 4s; }
+#script16 { animation-delay: 4s; }
+#script17 { animation-delay: 4s; }
+#script18 { animation-delay: 4s; }
+#script19 { animation-delay: 4s; }
+#script20 { animation-delay: 4s; }
+#script21 { animation-delay: 4s; }
+#script22 { animation-delay: 4s; }
+#script23 { animation-delay: 4s; }
+#script24 { animation-delay: 4s; }
+#script25 { animation-delay: 4s; }
+#script26 { animation-delay: 4s; }
+#script27 { animation-delay: 4s; }
+#script28 { animation-delay: 4s; }
+#script29 { animation-delay: 4s; }
+#script30 { animation-delay: 4s; }
+#script31 { animation-delay: 4s; }
+#script32 { animation-delay: 4s; }
+
+
+
+
+
+div#dashboard {
+	height: inherit;
+	width: 60%;	
+	background-color: #DDDDDD;
+	float: right;
+	color: #FFFFFF
+}
+@keyframes linkfadein {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+div.boxed-group.flush {
+	opacity: 0;
+	animation-delay: 3s;
+	animation-duration: 1s;
+	animation-name: linkfadein;
+	-webkit-animation-delay: 3s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: linkfadein;
+	-moz-animation-delay: 3s;
+	-moz-animation-duration: 1s;
+	-moz-animation-name: linkfadein;
+	-ms-animation-delay: 3s;
+	-ms-animation-duration: 1s;
+	-ms-animation-name: linkfadein;
+	-o-animation-delay: 3s;
+	-o-animation-duration: 1s;
+	-o-animation-name: linkfadein;
+	
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+li h4 {
+	opacity: 0;
+	animation-delay: 4.5s;
+	animation-duration: 0.5s;
+	animation-name: linkfadein;
+	-webkit-animation-name: linkfadein;
+	-moz-animation-name: linkfadein;
+	-ms-animation-name: linkfadein;
+	-o-animation-name: linkfadein;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+ul {
+	list-style: none;
+}
+a.SDlinks {
+	opacity: 0;
+	list-style: none;
+	color: #FFFFFF;
+	animation-delay: 5s;
+	animation-duration: 1s;
+	animation-name: linkfadein;
+	-webkit-animation-delay: 5s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: linkfadein;
+	-moz-animation-delay: 5s;
+	-moz-animation-duration: 1s;
+	-moz-animation-name: linkfadein;
+	-ms-animation-delay: 5s;
+	-ms-animation-duration: 1s;
+	-ms-animation-name: linkfadein;
+	-o-animation-delay: 5s;
+	-o-animation-duration: 1s;
+	-o-animation-name: linkfadein;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	
+}
