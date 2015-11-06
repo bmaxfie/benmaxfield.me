@@ -1,0 +1,127 @@
+'''
+Created on Oct 17, 2015
+
+@author: Ben Maxfield
+'''
+
+from time import clock
+from flask import Markup
+from apscheduler.schedulers.background import BackgroundScheduler
+from lxml import html, etree
+import requests
+import feedparser
+
+class Scraper():
+    
+    scheduler = None
+    css = '''
+@keyframes blink {
+    0% { color: #00FFFF; }
+    100% { color: #FFFFFF; }
+}
+@-webkit-keyframes blink {
+    0% { color: #00FFFF; }
+    100% { color: #FFFFFF; }
+}
+@-moz-keyframes blink {
+    0% { color: #00FFFF; }
+    100% { color: #FFFFFF; }
+}
+@-ms-keyframes blink {
+    0% { color: #00FFFF; }
+    100% { color: #FFFFFF; }
+}
+/*TODO:*/
+/*font-family: "Consolas";*/
+span#3 {
+    -webkit-animation-name: blink; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    -moz-animation-name: blink; /* Chrome, Safari, Opera */
+    -moz-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -moz-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    -ms-animation-name: blink; /* Chrome, Safari, Opera */
+    -ms-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -ms-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    -o-animation-name: blink; /* Chrome, Safari, Opera */
+    -o-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -o-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: blink;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    color: #FFFFFF;
+}
+        '''
+    script = Markup('''
+        <span id="3">> python scraper.py</span></br>
+        <span id="1">STARTING WEB SCRAPER...</span></br>
+        <span id="1">=========================|</span></br>
+        <span id="1">000%|====================|</span></br>
+        <span id="1">=========================|</span></br>
+        </br>
+        <span id="1">GETting first target:</span></br>
+        <span id="1">address=\"https://github.com/bmaxfie\"</span></br>
+        <span id="1">.</span></br>
+        <span id="1">.</span></br>
+        <span id="1">.</span></br>
+        <span id="1">RETRIEVED .html, {} KB</span></br>
+        <span id="1">PARSING .html</span></br>
+        <span id="1">FOUND commit stats!</span></br>
+        <span id="1">ADDED markup to front.html template</span></br>
+        <span id="1">FOUND .css links!</span></br>
+        <span id="1">ADDED markup to front.html template</span></br>
+        <span id="1">FOUND .js links!</span></br>
+        <span id="1">ADDED markup to front.html template</span></br>
+        <span id="1">ANIMATING...</span></br>
+        </br>
+        <span id="1">GETting second target:</span></br>
+        <span id="1">address=\"http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml\"</span></br>
+        <span id="1">.</span></br>
+        <span id="1">.</span></br>
+        <span id="1">.</span></br>
+        <span id="1">RETRIEVED .xml, {} KB</span></br>
+        <span id="1">PARSING .xml</span></br>
+        <span id="1">FOUND top 3 articles!</span></br>
+        <span id="1">ADDED markup to front.html template</span></br>
+        <span id="1">ANIMATING...</span></br>
+        </br>
+        <span id="1">=========================|</span></br>
+        <span id="1">WEB SCRAPER COMPLETE</span></br>
+        </br>
+        <span id="1">></span>
+        ''')
+    SDtitles = ['', '', '']
+    SDlinks = ['', '', '']
+    SDtimestamp = 0
+    GithubHTML = None
+    GithubCSS = None
+
+
+    def __init__(self):
+        self.update()
+        scheduler = BackgroundScheduler()
+        scheduler.start()
+        scheduler.add_job(self.update, 'interval', hours=1)
+        
+    def update(self):
+        # Saves the top 3 article titles and links from ScienceDaily.com under the Technology category.
+        feed = feedparser.parse('http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml')
+        for i in range(0,3):
+            self.SDtitles[i] = feed.entries[i].title
+            self.SDlinks[i] = feed.entries[i].link
+        self.SDtimestamp = clock()
+        SDsize = feed.__sizeof__() * 100.0 / 1000 # SOMETHING IS WRONG HERE, This XML is not ~508 Bytes... its at least 5 KB.
+        
+        # Gets bmaxfie@Github public data and .css from page
+        page = requests.get('https://github.com/bmaxfie')
+        tree = html.fromstring(page.text)
+        self.GithubHTML = Markup(etree.tostring(tree.xpath('//div[@class="boxed-group flush"]')[1], pretty_print=True))
+        GithubSize = page.__sizeof__() * 1000.0 / 1000 # SOMETHING IS WRONG HERE, see above comment
+        
+        strings = ""
+        for element in tree.xpath('//link[@rel="stylesheet"]'):
+            strings = strings + etree.tostring(element, pretty_print=True)
+        self.GithubCSS = Markup(strings)
+        
+        self.script = self.script.format(SDsize, GithubSize)
+        
