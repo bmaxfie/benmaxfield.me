@@ -151,7 +151,6 @@ a div#console:visited #pipe1 {
 	color: #FFFFFF;
 }
 #script1 { 
-	cursor: default;
 	padding: 0 0 0 5px;
 	color: #FFFFFF;
 	opacity: 1;

@@ -50,7 +50,7 @@ class Scraper():
         <span class="script" id="script30">=========================|</span></br>
         <span class="script" id="script31">WEB SCRAPER COMPLETE</span></br>
         </br>
-        <span class="script" id="script32">> <span id="pipe2">|</span></span>
+        <span class="script" id="script32">></span>
         ''')
     SDtitles = ['', '', '']
     SDlinks = ['', '', '']

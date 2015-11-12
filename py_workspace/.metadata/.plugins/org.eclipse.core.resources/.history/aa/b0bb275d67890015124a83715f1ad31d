@@ -58,15 +58,14 @@ div#console {
 	font-family: Consolas, sans-serif;
 	float: left;
 }
-/* 
 a div#console:visited #pipe1 {
-	-webkit-animation: none; Chrome, Safari, Opera
-    -moz-animation: none; Chrome, Safari, Opera
-    -ms-animation: none; Chrome, Safari, Opera
-    -o-animation: none; Chrome, Safari, Opera
+	-webkit-animation: none; /* Chrome, Safari, Opera */
+    -moz-animation: none; /* Chrome, Safari, Opera */
+    -ms-animation: none; /* Chrome, Safari, Opera */
+    -o-animation: none; /* Chrome, Safari, Opera */
 	animation: none;
 	opacity: 0;
-} */
+}
 
 @keyframes blink {
 	0% { opacity: 1; }
@@ -125,7 +124,6 @@ a div#console:visited #pipe1 {
 	100% { width: 0%; }
 }
 .script {
-	cursor: default;
 	opacity: 0;
 	padding: 0 0 0 5px;
 	-webkit-animation-name: blinkOn; /* Chrome, Safari, Opera */
@@ -151,7 +149,6 @@ a div#console:visited #pipe1 {
 	color: #FFFFFF;
 }
 #script1 { 
-	cursor: default;
 	padding: 0 0 0 5px;
 	color: #FFFFFF;
 	opacity: 1;
@@ -163,61 +160,49 @@ a div#console:visited #pipe1 {
 }
 #pipe1 {
 	opacity: 1;
-	-webkit-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
-    -moz-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
-    -ms-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
-    -o-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
-	animation: blink 2s linear 0.5s 5;
+	-webkit-animation: blink 2s linear 0.5s 6s; /* Chrome, Safari, Opera */
+    -moz-animation: blink 2s linear 0.5s 6s; /* Chrome, Safari, Opera */
+    -ms-animation: blink 2s linear 0.5s 6s; /* Chrome, Safari, Opera */
+    -o-animation: blink 2s linear 0.5s 6s; /* Chrome, Safari, Opera */
+	animation: blink 2s linear 0.5s 6s;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
 	-ms-animation-fill-mode: forwards;
 	-o-animation-fill-mode: forwards;
 }
-#pipe2 {
-	opacity: 1;
-	-webkit-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -moz-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -ms-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -o-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-	animation: blink 2s linear 0.5s infinite;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-	-o-animation-fill-mode: forwards;
-}
-#script2 { animation-delay: 11.25s; }
-#script3 { animation-delay: 11.25s; }
-#script4 { animation-delay: 11.25s; }
-#script5 { animation-delay: 11.25s; }
-#script6 { animation-delay: 13s; }
-#script7 { animation-delay: 13s; }
-#script8 { animation-delay: 13.2s; }
-#script9 { animation-delay: 13.7s; }
-#script10 { animation-delay: 14.2s; }
-#script11 { animation-delay: 15s; }
-#script12 { animation-delay: 15.2s; }
-#script13 { animation-delay: 15.4s; }
-#script14 { animation-delay: 15.8s; }
-#script15 { animation-delay: 16s; }
-#script16 { animation-delay: 16.4s; }
-#script17 { animation-delay: 16.6s; }
-#script18 { animation-delay: 16.9s; }
-#script19 { animation-delay: 17s; }
-#script20 { animation-delay: 18s; }
-#script21 { animation-delay: 18.1s; }
-#script22 { animation-delay: 18.5s; }
-#script23 { animation-delay: 19s; }
-#script24 { animation-delay: 19.5s; }
-#script25 { animation-delay: 19.7s; }
-#script26 { animation-delay: 20s; }
-#script27 { animation-delay: 20.2s; }
-#script28 { animation-delay: 20.6s; }
-#script29 { animation-delay: 21s; }
-#script30 { animation-delay: 21.2s; }
-#script31 { animation-delay: 21.2s; }
-#script32 { animation-delay: 21.2s; }
+#script2 { animation-delay: 1.25s; }
+#script3 { animation-delay: 1.25s; }
+#script4 { animation-delay: 1.25s; }
+#script5 { animation-delay: 1.25s; }
+#script6 { animation-delay: 3s; }
+#script7 { animation-delay: 3s; }
+#script8 { animation-delay: 3.2s; }
+#script9 { animation-delay: 3.7s; }
+#script10 { animation-delay: 4.2s; }
+#script11 { animation-delay: 5s; }
+#script12 { animation-delay: 5.2s; }
+#script13 { animation-delay: 5.4s; }
+#script14 { animation-delay: 5.8s; }
+#script15 { animation-delay: 6s; }
+#script16 { animation-delay: 6.4s; }
+#script17 { animation-delay: 6.6s; }
+#script18 { animation-delay: 6.9s; }
+#script19 { animation-delay: 7s; }
+#script20 { animation-delay: 8s; }
+#script21 { animation-delay: 8.1s; }
+#script22 { animation-delay: 8.5s; }
+#script23 { animation-delay: 9s; }
+#script24 { animation-delay: 9.5s; }
+#script25 { animation-delay: 9.7s; }
+#script26 { animation-delay: 10s; }
+#script27 { animation-delay: 10.2s; }
+#script28 { animation-delay: 10.6s; }
+#script29 { animation-delay: 11s; }
+#script30 { animation-delay: 11.2s; }
+#script31 { animation-delay: 11.2s; }
+#script32 { animation-delay: 11.2s; }
+
 
 
 
@@ -235,19 +220,19 @@ div#dashboard {
 }
 div.boxed-group.flush {
 	opacity: 0;
-	animation-delay: 17s;
+	animation-delay: 7s;
 	animation-duration: 1s;
 	animation-name: linkfadein;
-	-webkit-animation-delay: 17s;
+	-webkit-animation-delay: 7s;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: linkfadein;
-	-moz-animation-delay: 17s;
+	-moz-animation-delay: 7s;
 	-moz-animation-duration: 1s;
 	-moz-animation-name: linkfadein;
-	-ms-animation-delay: 17s;
+	-ms-animation-delay: 7s;
 	-ms-animation-duration: 1s;
 	-ms-animation-name: linkfadein;
-	-o-animation-delay: 17s;
+	-o-animation-delay: 7s;
 	-o-animation-duration: 1s;
 	-o-animation-name: linkfadein;
 	
@@ -259,12 +244,8 @@ div.boxed-group.flush {
 }
 li h4 {
 	opacity: 0;
+	animation-delay: 11s;
 	animation-duration: 0.5s;
-	animation-delay: 21s;
-	-webkit-animation-delay: 21s;
-	-moz-animation-delay: 21s;
-	-ms-animation-delay: 21s;
-	-o-animation-delay: 21s;
 	animation-name: linkfadein;
 	-webkit-animation-name: linkfadein;
 	-moz-animation-name: linkfadein;
@@ -283,19 +264,19 @@ a.SDlinks {
 	opacity: 0;
 	list-style: none;
 	color: #FFFFFF;
-	animation-delay: 21.5s;
+	animation-delay: 11.5s;
 	animation-duration: 1s;
 	animation-name: linkfadein;
-	-webkit-animation-delay: 21.5s;
+	-webkit-animation-delay: 11.5s;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: linkfadein;
-	-moz-animation-delay: 21.5s;
+	-moz-animation-delay: 11.5s;
 	-moz-animation-duration: 1s;
 	-moz-animation-name: linkfadein;
-	-ms-animation-delay: 21.5s;
+	-ms-animation-delay: 11.5s;
 	-ms-animation-duration: 1s;
 	-ms-animation-name: linkfadein;
-	-o-animation-delay: 21.5s;
+	-o-animation-delay: 11.5s;
 	-o-animation-duration: 1s;
 	-o-animation-name: linkfadein;
 	animation-fill-mode: forwards;

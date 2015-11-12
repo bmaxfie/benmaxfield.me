@@ -58,15 +58,14 @@ div#console {
 	font-family: Consolas, sans-serif;
 	float: left;
 }
-/* 
 a div#console:visited #pipe1 {
-	-webkit-animation: none; Chrome, Safari, Opera
-    -moz-animation: none; Chrome, Safari, Opera
-    -ms-animation: none; Chrome, Safari, Opera
-    -o-animation: none; Chrome, Safari, Opera
+	-webkit-animation: none; /* Chrome, Safari, Opera */
+    -moz-animation: none; /* Chrome, Safari, Opera */
+    -ms-animation: none; /* Chrome, Safari, Opera */
+    -o-animation: none; /* Chrome, Safari, Opera */
 	animation: none;
 	opacity: 0;
-} */
+}
 
 @keyframes blink {
 	0% { opacity: 1; }
@@ -125,7 +124,6 @@ a div#console:visited #pipe1 {
 	100% { width: 0%; }
 }
 .script {
-	cursor: default;
 	opacity: 0;
 	padding: 0 0 0 5px;
 	-webkit-animation-name: blinkOn; /* Chrome, Safari, Opera */
@@ -151,7 +149,6 @@ a div#console:visited #pipe1 {
 	color: #FFFFFF;
 }
 #script1 { 
-	cursor: default;
 	padding: 0 0 0 5px;
 	color: #FFFFFF;
 	opacity: 1;
@@ -168,19 +165,6 @@ a div#console:visited #pipe1 {
     -ms-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
     -o-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
 	animation: blink 2s linear 0.5s 5;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-	-o-animation-fill-mode: forwards;
-}
-#pipe2 {
-	opacity: 1;
-	-webkit-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -moz-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -ms-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -o-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-	animation: blink 2s linear 0.5s infinite;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;

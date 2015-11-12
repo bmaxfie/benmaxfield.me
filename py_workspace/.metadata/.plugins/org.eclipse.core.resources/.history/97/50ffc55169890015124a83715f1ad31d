@@ -57,8 +57,7 @@ div#console {
 	background-color: #000000;
 	font-family: Consolas, sans-serif;
 	float: left;
-}
-/* 
+}/* 
 a div#console:visited #pipe1 {
 	-webkit-animation: none; Chrome, Safari, Opera
     -moz-animation: none; Chrome, Safari, Opera
@@ -151,7 +150,6 @@ a div#console:visited #pipe1 {
 	color: #FFFFFF;
 }
 #script1 { 
-	cursor: default;
 	padding: 0 0 0 5px;
 	color: #FFFFFF;
 	opacity: 1;

@@ -58,15 +58,14 @@ div#console {
 	font-family: Consolas, sans-serif;
 	float: left;
 }
-/* 
 a div#console:visited #pipe1 {
-	-webkit-animation: none; Chrome, Safari, Opera
-    -moz-animation: none; Chrome, Safari, Opera
-    -ms-animation: none; Chrome, Safari, Opera
-    -o-animation: none; Chrome, Safari, Opera
+	-webkit-animation: none; /* Chrome, Safari, Opera */
+    -moz-animation: none; /* Chrome, Safari, Opera */
+    -ms-animation: none; /* Chrome, Safari, Opera */
+    -o-animation: none; /* Chrome, Safari, Opera */
 	animation: none;
 	opacity: 0;
-} */
+}
 
 @keyframes blink {
 	0% { opacity: 1; }
@@ -125,7 +124,6 @@ a div#console:visited #pipe1 {
 	100% { width: 0%; }
 }
 .script {
-	cursor: default;
 	opacity: 0;
 	padding: 0 0 0 5px;
 	-webkit-animation-name: blinkOn; /* Chrome, Safari, Opera */
@@ -151,7 +149,6 @@ a div#console:visited #pipe1 {
 	color: #FFFFFF;
 }
 #script1 { 
-	cursor: default;
 	padding: 0 0 0 5px;
 	color: #FFFFFF;
 	opacity: 1;
@@ -168,19 +165,6 @@ a div#console:visited #pipe1 {
     -ms-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
     -o-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
 	animation: blink 2s linear 0.5s 5;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-	-o-animation-fill-mode: forwards;
-}
-#pipe2 {
-	opacity: 1;
-	-webkit-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -moz-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -ms-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -o-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-	animation: blink 2s linear 0.5s infinite;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
@@ -235,19 +219,19 @@ div#dashboard {
 }
 div.boxed-group.flush {
 	opacity: 0;
-	animation-delay: 17s;
+	animation-delay: 7s;
 	animation-duration: 1s;
 	animation-name: linkfadein;
-	-webkit-animation-delay: 17s;
+	-webkit-animation-delay: 7s;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: linkfadein;
-	-moz-animation-delay: 17s;
+	-moz-animation-delay: 7s;
 	-moz-animation-duration: 1s;
 	-moz-animation-name: linkfadein;
-	-ms-animation-delay: 17s;
+	-ms-animation-delay: 7s;
 	-ms-animation-duration: 1s;
 	-ms-animation-name: linkfadein;
-	-o-animation-delay: 17s;
+	-o-animation-delay: 7s;
 	-o-animation-duration: 1s;
 	-o-animation-name: linkfadein;
 	
@@ -259,12 +243,8 @@ div.boxed-group.flush {
 }
 li h4 {
 	opacity: 0;
+	animation-delay: 11s;
 	animation-duration: 0.5s;
-	animation-delay: 21s;
-	-webkit-animation-delay: 21s;
-	-moz-animation-delay: 21s;
-	-ms-animation-delay: 21s;
-	-o-animation-delay: 21s;
 	animation-name: linkfadein;
 	-webkit-animation-name: linkfadein;
 	-moz-animation-name: linkfadein;
@@ -283,19 +263,19 @@ a.SDlinks {
 	opacity: 0;
 	list-style: none;
 	color: #FFFFFF;
-	animation-delay: 21.5s;
+	animation-delay: 11.5s;
 	animation-duration: 1s;
 	animation-name: linkfadein;
-	-webkit-animation-delay: 21.5s;
+	-webkit-animation-delay: 11.5s;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-name: linkfadein;
-	-moz-animation-delay: 21.5s;
+	-moz-animation-delay: 11.5s;
 	-moz-animation-duration: 1s;
 	-moz-animation-name: linkfadein;
-	-ms-animation-delay: 21.5s;
+	-ms-animation-delay: 11.5s;
 	-ms-animation-duration: 1s;
 	-ms-animation-name: linkfadein;
-	-o-animation-delay: 21.5s;
+	-o-animation-delay: 11.5s;
 	-o-animation-duration: 1s;
 	-o-animation-name: linkfadein;
 	animation-fill-mode: forwards;

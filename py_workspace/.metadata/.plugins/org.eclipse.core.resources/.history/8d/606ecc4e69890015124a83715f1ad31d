@@ -58,15 +58,14 @@ div#console {
 	font-family: Consolas, sans-serif;
 	float: left;
 }
-/* 
 a div#console:visited #pipe1 {
-	-webkit-animation: none; Chrome, Safari, Opera
-    -moz-animation: none; Chrome, Safari, Opera
-    -ms-animation: none; Chrome, Safari, Opera
-    -o-animation: none; Chrome, Safari, Opera
+	-webkit-animation: none; /* Chrome, Safari, Opera */
+    -moz-animation: none; /* Chrome, Safari, Opera */
+    -ms-animation: none; /* Chrome, Safari, Opera */
+    -o-animation: none; /* Chrome, Safari, Opera */
 	animation: none;
 	opacity: 0;
-} */
+}
 
 @keyframes blink {
 	0% { opacity: 1; }
@@ -151,7 +150,6 @@ a div#console:visited #pipe1 {
 	color: #FFFFFF;
 }
 #script1 { 
-	cursor: default;
 	padding: 0 0 0 5px;
 	color: #FFFFFF;
 	opacity: 1;
