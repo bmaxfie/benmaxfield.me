@@ -1,0 +1,32 @@
+$(document).ready(function(){
+	
+	setTimeout(remove1, 14000);
+	setTimeout(remove2, 15000);
+	setTimeout(remove3, 16000);
+	setTimeout(remove4, 17000);
+	setTimeout(remove5, 18000);
+	setTimeout(remove6, 19000);
+	setTimeout(remove7, 20000);
+	
+	function remove1(num){
+		$("#script1").hide();
+	}
+	function remove2(num){
+		$("#script1").hide();
+	}
+	function remove3(num){
+		$("#script1").hide();
+	}
+	function remove4(num){
+		$("#script1").hide();
+	}
+	function remove5(num){
+		$("#script1").hide();
+	}
+	function remove6(num){
+		$("#script1").hide();
+	}
+	function remove7(num){
+		$("#script1").hide();
+	}
+});

@@ -124,6 +124,7 @@ a div#console:visited #pipe1 {
 	0% { width: 100%; }
 	100% { width: 0%; }
 }
+
 .script {
 	cursor: default;
 	opacity: 0;

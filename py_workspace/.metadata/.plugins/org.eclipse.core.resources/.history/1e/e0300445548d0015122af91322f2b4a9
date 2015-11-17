@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	
+	setTimeout(remove(1), 000);
+	setTimeout(remove(2), 000);
+	setTimeout(remove(3), 000);
+	setTimeout(remove(4), 000);
+	setTimeout(remove(5), 000);
+	setTimeout(remove(6), 000);
+	setTimeout(remove(7), 000);
+	
+	function remove1(var num){
+		$("#script" + num).hide();
+	}
+});

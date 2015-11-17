@@ -1,0 +1,4 @@
+$(document).ready(function(){
+	
+	$("#script2").setTimeout($("#script2").hide(), 15000);
+});

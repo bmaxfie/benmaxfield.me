@@ -1,0 +1,4 @@
+$(document).ready(function(){
+	
+	$("#script2").delay(15000).hide();
+});

@@ -1,0 +1,8 @@
+$(document).ready(function(){
+	
+	setTimeout(myFunction, 20000);
+	
+	function myFunction(){
+		$("#script2").hide();
+	}
+});

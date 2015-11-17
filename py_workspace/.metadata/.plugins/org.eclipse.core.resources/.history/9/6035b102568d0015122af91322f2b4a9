@@ -1,0 +1,35 @@
+$(document).ready(function(){
+	
+	setTimeout(remove1, 14000);
+	setTimeout(remove2, 15000);
+	setTimeout(remove3, 16000);
+	setTimeout(remove4, 17000);
+	setTimeout(remove5, 18000);
+	setTimeout(remove6, 19000);
+	setTimeout(remove7, 20000);
+	
+	function remove1(){
+		$("#script1").hide();
+	}
+	function remove2(){
+		$("#script2").hide();
+	}
+	function remove3(){
+		$("#script3").hide();
+	}
+	function remove4(){
+		$("#script4").hide();
+	}
+	function remove5(){
+		$("#script5").hide();
+	}
+	function removespace1(){
+		$("#space1").hide();
+	}
+	function remove6(){
+		$("#script6").hide();
+	}
+	function remove7(){
+		$("#script7").hide();
+	}
+});

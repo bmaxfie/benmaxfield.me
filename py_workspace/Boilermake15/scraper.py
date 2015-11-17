@@ -15,14 +15,14 @@ class Scraper():
     
     scheduler = None
     script = Markup('''
-        <span id="script1">> python scraper.py<span id="pipe1">|</span></span></br>
-        <span class="script" id="script2">STARTING WEB SCRAPER...</span></br>
-        <span class="script" id="script3">=========================|</span></br>
-        <span class="script" id="script4">000%|====================|</span></br>
-        <span class="script" id="script5">=========================|</span></br>
-        </br>
-        <span class="script" id="script6">GETting first target:</span></br>
-        <span class="script" id="script7">address=\"https://github.com/bmaxfie\"</span></br>
+        <span id="script1">> python scraper.py<span id="pipe1">|</span></br></span>
+        <span class="script" id="script2">STARTING WEB SCRAPER...</br></span>
+        <span class="script" id="script3">=========================|</br></span>
+        <span class="script" id="script4">000%|====================|</br></span>
+        <span class="script" id="script5">=========================|</br></span>
+        <span id="space1"></br></span>
+        <span class="script" id="script6">GETting first target:</br></span>
+        <span class="script" id="script7">address=\"https://github.com/bmaxfie\"</br></span>
         <span class="script" id="script8">.</span></br>
         <span class="script" id="script9">.</span></br>
         <span class="script" id="script10">.</span></br>
@@ -46,10 +46,10 @@ class Scraper():
         <span class="script" id="script27">FOUND top 3 articles!</span></br>
         <span class="script" id="script28">ADDED markup to front.html template</span></br>
         <span class="script" id="script29">ANIMATING...</span></br>
-        </br>
+        <span id="space3"></br></span>
         <span class="script" id="script30">=========================|</span></br>
         <span class="script" id="script31">WEB SCRAPER COMPLETE</span></br>
-        </br>
+        <span id="space4"></br></span>
         <span class="script" id="script32">> <span id="pipe2">|</span></span>
         ''')
     SDtitles = ['', '', '']
