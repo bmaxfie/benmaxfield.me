@@ -43,12 +43,12 @@ class Scraper():
         <span class="script" id="script24">.</span></br>
         <span class="script" id="script25">RETRIEVED .xml, {} KB</span></br>
         <span class="script" id="script26">PARSING .xml</span></br>
-        <span class="script" id="script27">FOUND top 3 articles!</br></span>
-        <span class="script" id="script28">ADDED markup to front.html template</br></span>
-        <span class="script" id="script29">ANIMATING...</br></span>
+        <span class="script" id="script27">FOUND top 3 articles!</span></br>
+        <span class="script" id="script28">ADDED markup to front.html template</span></br>
+        <span class="script" id="script29">ANIMATING...</span></br>
         <span id="space3"></br></span>
-        <span class="script" id="script30">=========================|</br></span>
-        <span class="script" id="script31">WEB SCRAPER COMPLETE</br></span>
+        <span class="script" id="script30">=========================|</span></br>
+        <span class="script" id="script31">WEB SCRAPER COMPLETE</span></br>
         <span id="space4"></br></span>
         <span class="script" id="script32">> <span id="pipe2">|</span></span>
         ''')

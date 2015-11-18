@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	setTimeout(cutBottom, 1);
+	setTimeout(cutBottom, 0);
 	setTimeout(toggle1, 20200);
 	setTimeout(toggle2, 20600);
 	setTimeout(toggle3, 21000);

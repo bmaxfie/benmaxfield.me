@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	setTimeout(cutBottom, 1);
+	//setTimeout(cutBottom, 1);
 	setTimeout(toggle1, 20200);
 	setTimeout(toggle2, 20600);
 	setTimeout(toggle3, 21000);
@@ -10,7 +10,7 @@ $(document).ready(function(){
 	setTimeout(toggle7, 21200);
 	setTimeout(toggle8, 21200);
 	
-	function cutBottom(){
+	/*function cutBottom(){
 		$("#script27").hide();
 		$("#script28").hide();
 		$("#script29").hide();
@@ -19,7 +19,7 @@ $(document).ready(function(){
 		$("#script31").hide();
 		$("#space4").hide();
 		$("#script32").hide();
-	}
+	}*/
 	
 	function toggle1(){
 		$("#script27").show();

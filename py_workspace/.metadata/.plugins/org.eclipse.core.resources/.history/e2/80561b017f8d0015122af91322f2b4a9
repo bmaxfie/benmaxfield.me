@@ -1,25 +1,22 @@
 $(document).ready(function(){
 	
-	setTimeout(cutBottom, 1);
-	setTimeout(toggle1, 20200);
-	setTimeout(toggle2, 20600);
-	setTimeout(toggle3, 21000);
-	setTimeout(toggle4, 21000);
-	setTimeout(toggle5, 21200);
-	setTimeout(toggle6, 21200);
-	setTimeout(toggle7, 21200);
-	setTimeout(toggle8, 21200);
+	$("#script27").hide();
+	$("#script28").hide();
+	$("#script29").hide();
+	$("#space3").hide();
+	$("#script30").hide();
+	$("#script31").hide();
+	$("#space4").hide();
+	$("#script32").hide();
 	
-	function cutBottom(){
-		$("#script27").hide();
-		$("#script28").hide();
-		$("#script29").hide();
-		$("#space3").hide();
-		$("#script30").hide();
-		$("#script31").hide();
-		$("#space4").hide();
-		$("#script32").hide();
-	}
+	setTimeout(toggle1, 1200);
+	setTimeout(toggle2, 1600);
+	setTimeout(toggle3, 2000);
+	setTimeout(toggle4, 2000);
+	setTimeout(toggle5, 2200);
+	setTimeout(toggle6, 2200)
+	setTimeout(toggle7, 2200);
+	setTimeout(toggle8, 2200);
 	
 	function toggle1(){
 		$("#script27").show();

@@ -213,12 +213,12 @@ a div#console:visited #pipe1 {
 #script24 { animation-delay: 19.5s; }
 #script25 { animation-delay: 19.7s; }
 #script26 { animation-delay: 20s; }
-#script27 { animation-delay: 0s; }
-#script28 { animation-delay: 0s; }
-#script29 { animation-delay: 0s; }
-#script30 { animation-delay: 0s; }
-#script31 { animation-delay: 0s; }
-#script32 { animation-delay: 0s; }
+#script27 { animation-delay: 0.2s; }
+#script28 { animation-delay: 0.6s; }
+#script29 { animation-delay: 1s; }
+#script30 { animation-delay: 1.2s; }
+#script31 { animation-delay: 1.2s; }
+#script32 { animation-delay: 1.2s; }
 
 
 
