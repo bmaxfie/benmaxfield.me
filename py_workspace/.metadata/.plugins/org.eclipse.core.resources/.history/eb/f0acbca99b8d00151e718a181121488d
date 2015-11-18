@@ -188,10 +188,10 @@ a div#console:visited #pipe1 {
 	-ms-animation-fill-mode: forwards;
 	-o-animation-fill-mode: forwards;
 }
-#script2 { animation-delay: 11s; }
-#script3 { animation-delay: 11s; }
-#script4 { animation-delay: 0s; }
-#script5 { animation-delay: 11s; }
+#script2 { animation-delay: 11.25s; }
+#script3 { animation-delay: 11.25s; }
+#script4 { animation-delay: 11.25s; }
+#script5 { animation-delay: 11.25s; }
 #script6 { animation-delay: 13s; }
 #script7 { animation-delay: 13s; }
 #script8 { animation-delay: 13.2s; }

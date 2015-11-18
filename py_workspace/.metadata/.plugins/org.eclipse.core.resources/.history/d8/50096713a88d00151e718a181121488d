@@ -23,26 +23,47 @@ $(document).ready(function(){
 	}
 	
 	function progressBar(){
-		$("#script4").empty().text("  0%|                    |").append("</br>").delay(3000).empty().text("  5%|=                   |").append("</br>");
-		/*$("#script4").empty().append(" 10%|==                  |</br>");
+		$("#script4").empty().append("  0%|                    |</br>");
+		sleep(100);
+		$("#script4").empty().append("  5%|=                   |</br>");
+		sleep(100);
+		$("#script4").empty().append(" 10%|==                  |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 15%|===                 |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 20%|====                |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 25%|=====               |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 30%|======              |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 35%|=======             |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 40%|========            |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 45%|=========           |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 50%|==========          |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 55%|===========         |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 60%|============        |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 65%|=============       |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 70%|==============      |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 75%|===============     |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 80%|================    |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 85%|=================   |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 90%|==================  |</br>");
+		sleep(100);
 		$("#script4").empty().append(" 95%|=================== |</br>");
-		$("#script4").empty().append("100%|====================|</br>");*/
+		sleep(100);
+		$("#script4").empty().append("100%|====================|</br>");
 	}
 	
 	function toggle1(){

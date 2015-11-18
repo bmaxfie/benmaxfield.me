@@ -23,8 +23,9 @@ $(document).ready(function(){
 	}
 	
 	function progressBar(){
-		$("#script4").empty().text("  0%|                    |").append("</br>").delay(3000).empty().text("  5%|=                   |").append("</br>");
-		/*$("#script4").empty().append(" 10%|==                  |</br>");
+		$("#script4").empty().append("  0%|                    |</br>".delay(100));
+		$("#script4").empty().append("  5%|=                   |</br>");
+		$("#script4").empty().append(" 10%|==                  |</br>");
 		$("#script4").empty().append(" 15%|===                 |</br>");
 		$("#script4").empty().append(" 20%|====                |</br>");
 		$("#script4").empty().append(" 25%|=====               |</br>");
@@ -42,7 +43,7 @@ $(document).ready(function(){
 		$("#script4").empty().append(" 85%|=================   |</br>");
 		$("#script4").empty().append(" 90%|==================  |</br>");
 		$("#script4").empty().append(" 95%|=================== |</br>");
-		$("#script4").empty().append("100%|====================|</br>");*/
+		$("#script4").empty().append("100%|====================|</br>");
 	}
 	
 	function toggle1(){

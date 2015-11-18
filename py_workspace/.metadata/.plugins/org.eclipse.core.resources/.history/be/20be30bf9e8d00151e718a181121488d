@@ -18,7 +18,7 @@ class Scraper():
         <span id="script1">> python scraper.py<span id="pipe1">|</span></br></span>
         <span class="script" id="script2">STARTING WEB SCRAPER...</br></span>
         <span class="script" id="script3">=========================|</br></span>
-        <span class="script" id="script4"></br></span>
+        <span class="script" id="script4">000%|====================|</br></span>
         <span class="script" id="script5">=========================|</br></span>
         <span id="space1"></br></span>
         <span class="script" id="script6">GETting first target:</br></span>

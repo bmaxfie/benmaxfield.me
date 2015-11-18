@@ -23,7 +23,7 @@ $(document).ready(function(){
 	}
 	
 	function progressBar(){
-		$("#script4").empty().text("  0%|                    |").append("</br>").delay(3000).empty().text("  5%|=                   |").append("</br>");
+		$("#script4").empty().append("  0%|                    |</br>").delay(3000).empty().append("  5%|=                   |</br>");
 		/*$("#script4").empty().append(" 10%|==                  |</br>");
 		$("#script4").empty().append(" 15%|===                 |</br>");
 		$("#script4").empty().append(" 20%|====                |</br>");
