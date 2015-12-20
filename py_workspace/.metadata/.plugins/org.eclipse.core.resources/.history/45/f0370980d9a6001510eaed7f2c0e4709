@@ -1,19 +1,21 @@
 // By: Ben Maxfield
-//
-//	This script animates the console pieces not able to be handled by the CSS3 animations.
+//	This script animates the console pieces not handled by the CSS3 animations.
 //		Specifically, this handles:
-//			* initial hiding of bottom lines 
+//
+//			* initial removal of bottom lines 
 //				(for sizing of container)
 //			* progress bar animation
-//			* timed hiding of top lines and showing of bottom lines
-//				(to keep console container same size; mimic a Windows' window)
+//			* timed removal of top lines 
+//				(to keep container same size, mimic Windows' window.)
 //
+// Note: Obviously, this is an incredibly long script for such a small animation. 
+//			Therefore, 
 
 $(document).ready(function(){
 	
 	setTimeout(cutBottom, 1);	// Cuts whole bottom 8 lines.
 	setTimeout(progressBar, 10900);	// Starts progress bar animation.
-	setTimeout(toggle1, 20200);	// Toggles the hiding of the top lines and the showing of the bottom ones.
+	setTimeout(toggle1, 20200);	// Toggles the deletion of the top lines.
 	setTimeout(toggle2, 20600);
 	setTimeout(toggle3, 21000);
 	setTimeout(toggle4, 21000);
@@ -65,8 +67,6 @@ $(document).ready(function(){
 		setTimeout(progress95, 1900);
 		setTimeout(progress100, 2000);
 	}
-	
-	// Hard Coded Animations:
 	function progress0(){
 		$("#script4").empty().text("  0%|                    |").append("</br>");
 	}

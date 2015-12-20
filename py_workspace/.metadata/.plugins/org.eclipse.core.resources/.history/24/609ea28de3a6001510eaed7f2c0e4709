@@ -6,13 +6,16 @@
 #
 
 ### Imports:
+import os
 from time import clock
-from flask import Flask, render_template
+from flask import Flask, url_for, render_template, redirect, request
 from scraper import Scraper
 ###
 
 
 app = Flask(__name__)
+
+# admin = Blueprint('admin', __name__, static_folder='res')
 
 # Create the Scraper/Scheduler
 scraper = Scraper()

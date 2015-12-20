@@ -1,13 +1,15 @@
 // By: Ben Maxfield
-//
-//	This script animates the console pieces not able to be handled by the CSS3 animations.
+//	This script animates the console pieces not handled by the CSS3 animations.
 //		Specifically, this handles:
+//
 //			* initial hiding of bottom lines 
 //				(for sizing of container)
 //			* progress bar animation
 //			* timed hiding of top lines and showing of bottom lines
 //				(to keep console container same size; mimic a Windows' window)
 //
+// Note: Obviously, this is an incredibly long script for such a small animation. 
+//			Therefore, 
 
 $(document).ready(function(){
 	
@@ -65,8 +67,6 @@ $(document).ready(function(){
 		setTimeout(progress95, 1900);
 		setTimeout(progress100, 2000);
 	}
-	
-	// Hard Coded Animations:
 	function progress0(){
 		$("#script4").empty().text("  0%|                    |").append("</br>");
 	}

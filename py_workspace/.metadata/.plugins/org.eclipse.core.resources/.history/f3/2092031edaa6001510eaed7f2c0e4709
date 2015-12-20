@@ -1,29 +1,15 @@
-#Created on Oct 17, 2015
-#@author: Ben Maxfield
-#
-#    The goal of Scraper is to:
-#        * Schedule the updating of the web scraping service
-#            (scrapes: github.com/bmaxfie and ScienceDaily.com)
-#        * Perform the web scraping and html/xml parsing.
-#            -Identifies top 3 technology news links and saves 
-#                their titles and links.
-#            -Saves the timestamp of the most recent web scrape.
-#            -Parses the GitHub html to identify the user 
-#                contibutions data container.
-#            -Parses the GitHub html to identify the css link,
-#                to properly style the container mentioned above.
-#        * Hold the console's script to reduce cluttering the HTML 
-#            that I will later need to refactor with Bootstrap.
-#
+'''
+Created on Oct 17, 2015
 
-### Imports:
+@author: Ben Maxfield
+'''
+
 from time import clock
 from flask import Markup
 from apscheduler.schedulers.background import BackgroundScheduler
 from lxml import html, etree
 import requests
 import feedparser
-###
 
 class Scraper():
     
@@ -88,7 +74,7 @@ class Scraper():
         self.SDtimestamp = clock()
         SDsize = feed.__sizeof__() * 100.0 / 1000 # SOMETHING IS WRONG HERE, This XML is not ~508 Bytes... its at least 5 KB.
         
-        # Gets bmaxfie@Github public data and css stylesheet link.
+        # Gets bmaxfie@Github public data and .css from page
         page = requests.get('https://github.com/bmaxfie')
         tree = html.fromstring(page.text)
         self.GithubHTML = Markup(etree.tostring(tree.xpath('//div[@class="boxed-group flush"]')[1], pretty_print=True))

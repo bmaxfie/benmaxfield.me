@@ -16,14 +16,12 @@
 #            that I will later need to refactor with Bootstrap.
 #
 
-### Imports:
 from time import clock
 from flask import Markup
 from apscheduler.schedulers.background import BackgroundScheduler
 from lxml import html, etree
 import requests
 import feedparser
-###
 
 class Scraper():
     
