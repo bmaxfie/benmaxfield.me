@@ -1,17 +1,7 @@
-// By: Ben Maxfield
-//	This script animates the console pieces not handled by the CSS3 animations.
-//		Specifically, this handles:
-//
-//			* progress bar animation
-//			* timed removal of top lines
-//
-// Note: Obviously, this is an incredibly long script for such a small animation. 
-//			Therefore, 
-
 $(document).ready(function(){
 	
 	setTimeout(cutBottom, 1);
-	setTimeout(progressBar, 10900);
+	setTimeout(progressBar, 19900);
 	setTimeout(toggle1, 20200);
 	setTimeout(toggle2, 20600);
 	setTimeout(toggle3, 21000);
@@ -56,64 +46,64 @@ $(document).ready(function(){
 		setTimeout(progress100, 2100);
 	}
 	function progress0(){
-		$("#script4").empty().text("  0%|                    |").append("</br>");
+		$("#script4").empty().text("&nbsp&nbsp&nbsp0%|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|").append("</br>");
 	}
 	function progress5(){
-		$("#script4").empty().append("  5%|=                   |</br>");
+		$("#script4").empty().append("&nbsp&nbsp5%|=&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress10(){
-		$("#script4").empty().append(" 10%|==                  |</br>");
+		$("#script4").empty().append("&nbsp10%|==&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress15(){
-		$("#script4").empty().append(" 15%|===                 |</br>");
+		$("#script4").empty().append("&nbsp15%|===&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress20(){
-		$("#script4").empty().append(" 20%|====                |</br>");
+		$("#script4").empty().append("&nbsp20%|====&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress25(){
-		$("#script4").empty().append(" 25%|=====               |</br>");
+		$("#script4").empty().append("&nbsp25%|=====&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress30(){
-		$("#script4").empty().append(" 30%|======              |</br>");
+		$("#script4").empty().append("&nbsp30%|======&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress35(){
-		$("#script4").empty().append(" 35%|=======             |</br>");
+		$("#script4").empty().append("&nbsp35%|=======&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress40(){
-		$("#script4").empty().append(" 40%|========            |</br>");
+		$("#script4").empty().append("&nbsp40%|========&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress45(){
-		$("#script4").empty().append(" 45%|=========           |</br>");
+		$("#script4").empty().append("&nbsp45%|=========&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress50(){
-		$("#script4").empty().append(" 50%|==========          |</br>");
+		$("#script4").empty().append("&nbsp50%|==========&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress55(){
-		$("#script4").empty().append(" 55%|===========         |</br>");
+		$("#script4").empty().append("&nbsp55%|===========&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress60(){
-		$("#script4").empty().append(" 60%|============        |</br>");
+		$("#script4").empty().append("&nbsp60%|============&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress65(){
-		$("#script4").empty().append(" 65%|=============       |</br>");
+		$("#script4").empty().append("&nbsp65%|=============&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress70(){
-		$("#script4").empty().append(" 70%|==============      |</br>");
+		$("#script4").empty().append("&nbsp70%|==============&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress75(){
-		$("#script4").empty().append(" 75%|===============     |</br>");
+		$("#script4").empty().append("&nbsp75%|===============&nbsp&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress80(){
-		$("#script4").empty().append(" 80%|================    |</br>");
+		$("#script4").empty().append("&nbsp80%|================&nbsp&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress85(){
-		$("#script4").empty().append(" 85%|=================   |</br>");
+		$("#script4").empty().append("&nbsp85%|=================&nbsp&nbsp&nbsp|</br>");
 	}
 	function progress90(){
-		$("#script4").empty().append(" 90%|==================  |</br>");
+		$("#script4").empty().append("&nbsp90%|==================&nbsp&nbsp|</br>");
 	}
 	function progress95(){
-		$("#script4").empty().append(" 95%|=================== |</br>");
+		$("#script4").empty().append("&nbsp95%|===================&nbsp|</br>");
 	}
 	function progress100(){
 		$("#script4").empty().append("100%|====================|</br>");

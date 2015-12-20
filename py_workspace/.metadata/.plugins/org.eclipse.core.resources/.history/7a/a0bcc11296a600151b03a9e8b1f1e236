@@ -1,17 +1,7 @@
-// By: Ben Maxfield
-//	This script animates the console pieces not handled by the CSS3 animations.
-//		Specifically, this handles:
-//
-//			* progress bar animation
-//			* timed removal of top lines
-//
-// Note: Obviously, this is an incredibly long script for such a small animation. 
-//			Therefore, 
-
 $(document).ready(function(){
 	
 	setTimeout(cutBottom, 1);
-	setTimeout(progressBar, 10900);
+	setTimeout(progressBar, 11000);
 	setTimeout(toggle1, 20200);
 	setTimeout(toggle2, 20600);
 	setTimeout(toggle3, 21000);
@@ -33,33 +23,39 @@ $(document).ready(function(){
 	}
 	
 	function progressBar(){
-		setTimeout(progress0, 100);
-		setTimeout(progress5, 200);
-		setTimeout(progress10, 300);
-		setTimeout(progress15, 400);
-		setTimeout(progress20, 500);
-		setTimeout(progress25, 600);
-		setTimeout(progress30, 700);
-		setTimeout(progress35, 800);
-		setTimeout(progress40, 900);
-		setTimeout(progress45, 1000);
-		setTimeout(progress50, 1100);
-		setTimeout(progress55, 1200);
-		setTimeout(progress60, 1300);
-		setTimeout(progress65, 1400);
-		setTimeout(progress70, 1500);
-		setTimeout(progress75, 1600);
-		setTimeout(progress80, 1700);
-		setTimeout(progress85, 1800);
-		setTimeout(progress90, 1900);
-		setTimeout(progress95, 2000);
-		setTimeout(progress100, 2100);
-	}
-	function progress0(){
 		$("#script4").empty().text("  0%|                    |").append("</br>");
+		setTimeout(progress5, 11500);
+		setTimeout(progress10, 1200);
+		setTimeout(progress15, 12500);
+		setTimeout(progress20, 13000);
+		setTimeout(progress25, 13500);
+		setTimeout(progress30, 14000);
+		setTimeout(progress35, 14500);
+		setTimeout(progress40, 15000);
+		setTimeout(progress45, 15500);
+		setTimeout(progress50, 16000);
+		/*$("#script4").empty().append(" 10%|==                  |</br>");
+		$("#script4").empty().append(" 15%|===                 |</br>");
+		$("#script4").empty().append(" 20%|====                |</br>");
+		$("#script4").empty().append(" 25%|=====               |</br>");
+		$("#script4").empty().append(" 30%|======              |</br>");
+		$("#script4").empty().append(" 35%|=======             |</br>");
+		$("#script4").empty().append(" 40%|========            |</br>");
+		$("#script4").empty().append(" 45%|=========           |</br>");
+		$("#script4").empty().append(" 50%|==========          |</br>");
+		$("#script4").empty().append(" 55%|===========         |</br>");
+		$("#script4").empty().append(" 60%|============        |</br>");
+		$("#script4").empty().append(" 65%|=============       |</br>");
+		$("#script4").empty().append(" 70%|==============      |</br>");
+		$("#script4").empty().append(" 75%|===============     |</br>");
+		$("#script4").empty().append(" 80%|================    |</br>");
+		$("#script4").empty().append(" 85%|=================   |</br>");
+		$("#script4").empty().append(" 90%|==================  |</br>");
+		$("#script4").empty().append(" 95%|=================== |</br>");
+		$("#script4").empty().append("100%|====================|</br>");*/
 	}
 	function progress5(){
-		$("#script4").empty().append("  5%|=                   |</br>");
+		$("#script4").empty().append("  5%|=                  |</br>");
 	}
 	function progress10(){
 		$("#script4").empty().append(" 10%|==                  |</br>");

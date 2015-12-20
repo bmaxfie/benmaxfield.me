@@ -1,13 +1,3 @@
-// By: Ben Maxfield
-//	This script animates the console pieces not handled by the CSS3 animations.
-//		Specifically, this handles:
-//
-//			* progress bar animation
-//			* timed removal of top lines
-//
-// Note: Obviously, this is an incredibly long script for such a small animation. 
-//			Therefore, 
-
 $(document).ready(function(){
 	
 	setTimeout(cutBottom, 1);

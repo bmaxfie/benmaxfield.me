@@ -190,8 +190,7 @@ a div#console:visited #pipe1 {
 }
 #script2 { animation-delay: 11s; }
 #script3 { animation-delay: 11s; }
-#script4 { animation-delay: 0s; 
-			white-space: pre-wrap; }
+#script4 { animation-delay: 0s; }
 #script5 { animation-delay: 11s; }
 #script6 { animation-delay: 13s; }
 #script7 { animation-delay: 13s; }
