@@ -22,9 +22,9 @@
 	<div id="header">
 		<h1 class="name">BEN MAXFIELD</h1>
 		<div class="row">
-			<p class="links left"><a href="https://github.com/bmaxfie">Github</a></p>
+			<p class="links left"><a href="http://github.com/bmaxfie">Github</a></p>
 			<h3 class="description">Freshman at Purdue University studying Computer Science. </br>Specializing in Embedded Software. </br>Member of IEEE ROV Embedded Software Team. </br><a href={{ url_for('static', filename="Resume.pdf", _external=True) }}>Resume</a></h3>
-			<p class="links right"><a href="https://www.linkedin.com/in/bmaxfie">LinkedIn</a></p>
+			<p class="links right"><a href="http://www.linkedin.com/in/bmaxfie">LinkedIn</a></p>
 		</div>
 	</div>
 	<a><div id="console">

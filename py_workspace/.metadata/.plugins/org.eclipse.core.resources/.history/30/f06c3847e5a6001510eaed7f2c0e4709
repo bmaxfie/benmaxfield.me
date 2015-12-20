@@ -1,4 +1,4 @@
-//@author: Ben Maxfield
+// By: Ben Maxfield
 //
 //	This script animates the console pieces not able to be handled by the CSS3 animations.
 //		Specifically, this handles:

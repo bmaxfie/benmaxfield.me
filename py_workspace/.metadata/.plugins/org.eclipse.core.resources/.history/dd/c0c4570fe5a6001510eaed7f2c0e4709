@@ -35,7 +35,7 @@ class Scraper():
         <span class="script" id="script4"></br></span>
         <span class="script" id="script5">==========================</br></span>
         <span id="space1"></br></span>
-        <span class="script" id="script6">GET first target:</br></span>
+        <span class="script" id="script6">GETting first target:</br></span>
         <span class="script" id="script7">address=\"https://github.com/bmaxfie\"</br></span>
         <span class="script" id="script8">.</span></br>
         <span class="script" id="script9">.</span></br>
@@ -50,7 +50,7 @@ class Scraper():
         <span class="script" id="script18">ADDED markup to front.html template</span></br>
         <span class="script" id="script19">ANIMATING...</span></br>
         </br>
-        <span class="script" id="script20">GET second target:</span></br>
+        <span class="script" id="script20">GETting second target:</span></br>
         <span class="script" id="script21">address=\"http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml\"</span></br>
         <span class="script" id="script22">.</span></br>
         <span class="script" id="script23">.</span></br>
