@@ -37,26 +37,26 @@ class Scraper():
         <span id="space1"></br></span>
         <span class="script" id="script6">GET first target:</br></span>
         <span class="script" id="script7">address=\"https://github.com/bmaxfie\"</br></span>
-        <span class="script" id="script8">.</span></br>
-        <span class="script" id="script9">.</span></br>
-        <span class="script" id="script10">.</span></br>
-        <span class="script" id="script11">RETRIEVED .html, {} KB</span></br>
-        <span class="script" id="script12">PARSING .html</span></br>
-        <span class="script" id="script13">FOUND commit stats!</span></br>
-        <span class="script" id="script14">ADDED markup to front.html template</span></br>
-        <span class="script" id="script15">FOUND .css links!</span></br>
-        <span class="script" id="script16">ADDED markup to front.html template</span></br>
-        <span class="script" id="script17">FOUND .js links!</span></br>
-        <span class="script" id="script18">ADDED markup to front.html template</span></br>
-        <span class="script" id="script19">ANIMATING...</span></br>
-        </br>
-        <span class="script" id="script20">GET second target:</span></br>
-        <span class="script" id="script21">address=\"http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml\"</span></br>
-        <span class="script" id="script22">.</span></br>
-        <span class="script" id="script23">.</span></br>
-        <span class="script" id="script24">.</span></br>
-        <span class="script" id="script25">RETRIEVED .xml, {} KB</span></br>
-        <span class="script" id="script26">PARSING .xml</span></br>
+        <span class="script" id="script8">.</br></span>
+        <span class="script" id="script9">.</br></span>
+        <span class="script" id="script10">.</br></span>
+        <span class="script" id="script11">RETRIEVED .html, {} KB</br></span>
+        <span class="script" id="script12">PARSING .html</br></span>
+        <span class="script" id="script13">FOUND commit stats!</br></span>
+        <span class="script" id="script14">ADDED markup to front.html template</br></span>
+        <span class="script" id="script15">FOUND .css links!</br></span>
+        <span class="script" id="script16">ADDED markup to front.html template</br></span>
+        <span class="script" id="script17">FOUND .js links!</br></span>
+        <span class="script" id="script18">ADDED markup to front.html template</br></span>
+        <span class="script" id="script19">ANIMATING...</br></span>
+        <span id="space2"></br></span>
+        <span class="script" id="script20">GET second target:</br></span>
+        <span class="script" id="script21">address=\"http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml\"</br></span>
+        <span class="script" id="script22">.</br></span>
+        <span class="script" id="script23">.</br></span>
+        <span class="script" id="script24">.</br></span>
+        <span class="script" id="script25">RETRIEVED .xml, {} KB</br></span>
+        <span class="script" id="script26">PARSING .xml</br></span>
         <span class="script" id="script27">FOUND top 3 articles!</br></span>
         <span class="script" id="script28">ADDED markup to front.html template</br></span>
         <span class="script" id="script29">ANIMATING...</br></span>

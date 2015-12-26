@@ -26,8 +26,8 @@ def getSDtimediff():
 # ROUTES AND RENDERS FRONT PAGE w/ all scraping data:
 @app.route('/')
 def redirect_front_page():
-#    return render_template('/front_bootstrapped.html', titles=scraper.SDtitles, links=scraper.SDlinks, githubHTML=scraper.GithubHTML, githubCSS=scraper.GithubCSS, timediff=getSDtimediff(), script=scraper.script)
-    return render_template('/front.html', titles=scraper.SDtitles, links=scraper.SDlinks, githubHTML=scraper.GithubHTML, githubCSS=scraper.GithubCSS, timediff=getSDtimediff(), script=scraper.script)
+    return render_template('/front_bootstrapped.html', titles=scraper.SDtitles, links=scraper.SDlinks, githubHTML=scraper.GithubHTML, githubCSS=scraper.GithubCSS, timediff=getSDtimediff(), script=scraper.script)
+#    return render_template('/front.html', titles=scraper.SDtitles, links=scraper.SDlinks, githubHTML=scraper.GithubHTML, githubCSS=scraper.GithubCSS, timediff=getSDtimediff(), script=scraper.script)
 
 if __name__ == '__main__':
     app.run()
