@@ -9,7 +9,7 @@
 //				(to keep console container same size; mimic a Windows' window)
 //
 
-$(document).ready(function(){
+$(document).ready(function(){ 
 	
 	setTimeout(cutBottom, 1);	// Cuts whole bottom 15 lines.
 	setTimeout(progressBar, 10900);	// Starts progress bar animation.

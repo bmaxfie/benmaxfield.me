@@ -6,7 +6,7 @@
 #
 
 ### Imports:
-from time import clock
+from time import time
 from flask import Flask, render_template
 from scraper import Scraper
 ###
@@ -19,8 +19,8 @@ scraper = Scraper()
 
 # Utility method that formats the timestamp for the most recently performed webscraping.
 def getSDtimediff():
-    secs = int((clock() - scraper.SDtimestamp) % 60)
-    mins = int((clock() - scraper.SDtimestamp) / 60)
+    secs = int((time() - scraper.SDtimestamp) % 60)
+    mins = int((time() - scraper.SDtimestamp) / 60)
     return `mins` + " mins, " + `secs` + " secs"
 
 # ROUTES AND RENDERS FRONT PAGE w/ all scraping data:

@@ -17,7 +17,7 @@
 #
 
 ### Imports:
-from time import clock
+from time import time
 from flask import Markup
 from apscheduler.schedulers.background import BackgroundScheduler
 from lxml import html, etree
@@ -84,7 +84,7 @@ class Scraper():
         for i in range(0,3):
             self.SDtitles[i] = feed.entries[i].title
             self.SDlinks[i] = feed.entries[i].link
-        self.SDtimestamp = clock()
+        self.SDtimestamp = time()
         SDsize = feed.__sizeof__() * 100.0 / 1000 # SOMETHING IS WRONG HERE, This XML is not ~508 Bytes... its at least 5 KB.
         
         # Gets bmaxfie@Github public data and css stylesheet link.
