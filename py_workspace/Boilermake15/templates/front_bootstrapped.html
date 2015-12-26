@@ -48,9 +48,9 @@
 					</div>
 					{% if titles %}
 						<ul class="centered" id="SDList">
-							<li><h4>Top ScienceDaily Tech articles from {{ timediff }} ago:</h4></li>
+							<li class="li-head"><h4>Top ScienceDaily Tech articles from {{ timediff }} ago:</h4></li>
 							{% for i in range(0,3) %}
-								<li><a class="SDlinks" href={{ links[i] }}>{{ titles[i] }}</a></li>
+								<li class="li-elem">{{ i+1 }}. <a class="SDlinks btn" href={{ links[i] }}>{{ titles[i] }}</a></li>
 							{% endfor %}
 						</ul>
 					{% endif %}

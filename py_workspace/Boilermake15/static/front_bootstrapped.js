@@ -13,8 +13,8 @@ $(document).ready(function(){
 	
 	setTimeout(cutBottom, 1);	// Cuts whole bottom 15 lines.
 	setTimeout(progressBar, 10900);	// Starts progress bar animation.
-	setTimeout(toggle1, 18000);	// Toggles the hiding of the top lines and the showing of the bottom ones.
-	setTimeout(toggle2, 18100);
+	//setTimeout(toggle1, 18000);	// Toggles the hiding of the top lines and the showing of the bottom ones.
+	//setTimeout(toggle2, 18100);
 	setTimeout(toggle3, 18500);
 	setTimeout(toggle4, 19000);
 	setTimeout(toggle5, 19500);
@@ -32,7 +32,7 @@ $(document).ready(function(){
 	// Called at 1ms.
 	// Sets css visibility variable to 'hidden'
 	function cutBottom(){
-		$("#script20").hide();
+		//$("#script20").hide();
 		$("#script21").hide();
 		$("#script22").hide();
 		$("#script23").hide();
@@ -41,12 +41,11 @@ $(document).ready(function(){
 		$("#script26").hide();
 		$("#script27").hide();
 		$("#script28").hide();
-		$("#script29").hide();
 		$("#space3").hide();
+		$("#script29").hide();
 		$("#script30").hide();
-		$("#script31").hide();
 		$("#space4").hide();
-		$("#script32").hide();
+		$("#script31").hide();
 	}
 	
 	// Called at 10.9s.
@@ -146,64 +145,64 @@ $(document).ready(function(){
 	}
 	
 	
-	function toggle1(){
+	/*function toggle1(){
 		$("#script20").show();
 		$("#script1").hide();
 	}
 	function toggle2(){
 		$("#script21").show();
 		$("#script2").hide();
-	}
+	}*/
 	function toggle3(){
-		$("#script22").show();
-		$("#script3").hide();
+		$("#script21").show();
+		$("#script1").hide();
 	}
 	function toggle4(){
-		$("#script23").show();
-		$("#script4").hide();
+		$("#script22").show();
+		$("#script2").hide();
 	}
 	function toggle5(){
-		$("#script24").show();
-		$("#script5").hide();
+		$("#script23").show();
+		$("#script3").hide();
 	}
 	function toggle6(){
-		$("#script25").show();
+		$("#script24").show();
 		$("#space1").hide();
 	}
 	function toggle7(){
-		$("#script26").show();
-		$("#script6").hide();
+		$("#script25").show();
+		$("#script4").hide();
 	}
 	function toggle8(){
-		$("#script27").show();
-		$("#script7").hide();
+		$("#script26").show();
+		$("#script5").hide();
 	}
 	function toggle9(){
-		$("#script28").show();
-		$("#script8").hide();
+		$("#script27").show();
+		$("#script6").hide();
 	}
 	function toggle10(){
-		$("#script29").show();
-		$("#script9").hide();
+		$("#script28").show();
+		$("#script7").hide();
 	}
 	function toggle11(){
 		$("#space3").show();
-		$("#script10").hide();
+		$("#script8").hide();
 	}
 	function toggle12(){
-		$("#script30").show();
-		$("#script11").hide();
+		$("#script29").show();
+		$("#script9").hide();
 	}
 	function toggle13(){
-		$("#script31").show();
-		$("#script12").hide();
+		$("#script30").show();
+		$("#script10").hide();
 	}
 	function toggle14(){
 		$("#space4").show();
-		$("#script13").hide();
+		$("#script11").hide();
 	}
 	function toggle15(){
-		$("#script32").show();
-		$("#script14").hide();
+		$("#script31").show();
+		$("#script12").hide();
 	}
 });

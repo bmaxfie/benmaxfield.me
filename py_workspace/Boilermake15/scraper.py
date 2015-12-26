@@ -33,38 +33,37 @@ class Scraper():
         <span class="script" id="script2">STARTING WEB SCRAPER...</br></span>
         <span class="script" id="script3">==========================</br></span>
         <span class="script" id="script4"></br></span>
-        <span class="script" id="script5">==========================</br></span>
         <span id="space1"></br></span>
-        <span class="script" id="script6">GET first target:</br></span>
-        <span class="script" id="script7">address=\"https://github.com/bmaxfie\"</br></span>
+        <span class="script" id="script5">GET first target:</br></span>
+        <span class="script" id="script6">address=\"https://github.com/bmaxfie\"</br></span>
+        <span class="script" id="script7">.</br></span>
         <span class="script" id="script8">.</br></span>
         <span class="script" id="script9">.</br></span>
-        <span class="script" id="script10">.</br></span>
-        <span class="script" id="script11">RETRIEVED .html, {} KB</br></span>
-        <span class="script" id="script12">PARSING .html</br></span>
-        <span class="script" id="script13">FOUND commit stats!</br></span>
-        <span class="script" id="script14">ADDED markup to front.html template</br></span>
-        <span class="script" id="script15">FOUND .css links!</br></span>
-        <span class="script" id="script16">ADDED markup to front.html template</br></span>
-        <span class="script" id="script17">FOUND .js links!</br></span>
-        <span class="script" id="script18">ADDED markup to front.html template</br></span>
-        <span class="script" id="script19">ANIMATING...</br></span>
+        <span class="script" id="script10">RETRIEVED .html, {} KB</br></span>
+        <span class="script" id="script11">PARSING .html</br></span>
+        <span class="script" id="script12">FOUND commit stats!</br></span>
+        <span class="script" id="script13">ADDED markup to front.html template</br></span>
+        <span class="script" id="script14">FOUND .css links!</br></span>
+        <span class="script" id="script15">ADDED markup to front.html template</br></span>
+        <span class="script" id="script16">FOUND .js links!</br></span>
+        <span class="script" id="script17">ADDED markup to front.html template</br></span>
+        <span class="script" id="script18">ANIMATING...</br></span>
         <span id="space2"></br></span>
-        <span class="script" id="script20">GET second target:</br></span>
-        <span class="script" id="script21">address=\"http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml\"</br></span>
+        <span class="script" id="script19">GET second target:</br></span>
+        <span class="script" id="script20">address=\"http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml\"</br></span>
+        <span class="script" id="script21">.</br></span>
         <span class="script" id="script22">.</br></span>
         <span class="script" id="script23">.</br></span>
-        <span class="script" id="script24">.</br></span>
-        <span class="script" id="script25">RETRIEVED .xml, {} KB</br></span>
-        <span class="script" id="script26">PARSING .xml</br></span>
-        <span class="script" id="script27">FOUND top 3 articles!</br></span>
-        <span class="script" id="script28">ADDED markup to front.html template</br></span>
-        <span class="script" id="script29">ANIMATING...</br></span>
+        <span class="script" id="script24">RETRIEVED .xml, {} KB</br></span>
+        <span class="script" id="script25">PARSING .xml</br></span>
+        <span class="script" id="script26">FOUND top 3 articles!</br></span>
+        <span class="script" id="script27">ADDED markup to front.html template</br></span>
+        <span class="script" id="script28">ANIMATING...</br></span>
         <span id="space3"></br></span>
-        <span class="script" id="script30">=========================|</br></span>
-        <span class="script" id="script31">WEB SCRAPER COMPLETE</br></span>
+        <span class="script" id="script29">=========================|</br></span>
+        <span class="script" id="script30">WEB SCRAPER COMPLETE</br></span>
         <span id="space4"></br></span>
-        <span class="script" id="script32">> <span id="pipe2">|</span></span>
+        <span class="script" id="script31">> <span id="pipe2">|</span></span>
         ''')
     SDtitles = ['', '', '']
     SDlinks = ['', '', '']
