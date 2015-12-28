@@ -1,0 +1,41 @@
+Your identification has been saved in /home/bmaxfie/.ssh/aws-eb.
+Your public key has been saved in /home/bmaxfie/.ssh/aws-eb.pub.
+The key fingerprint is:
+5f:47:4b:fd:7d:d3:0d:77:c3:48:c6:b9:87:7d:4a:2a aws-eb
+The key's randomart image is:
++--[ RSA 2048]----+
+|            .o.  |
+|            ooo. |
+|             .Bo+|
+|             =.*O|
+|        S   .o+oB|
+|         .E.... o|
+|          ..     |
+|                 |
+|                 |
++-----------------+
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "elasticloadbalancing:DescribeInstanceHealth",
+            "ec2:DescribeInstances",
+            "ec2:DescribeInstanceStatus",
+            "ec2:GetConsoleOutput",
+            "ec2:AssociateAddress",
+            "ec2:DescribeAddresses",
+            "ec2:DescribeSecurityGroups",
+            "sqs:GetQueueAttributes",
+            "sqs:GetQueueUrl",
+            "autoscaling:DescribeAutoScalingGroups",
+            "autoscaling:DescribeAutoScalingInstances",
+            "autoscaling:DescribeScalingActivities",
+            "autoscaling:DescribeNotificationConfigurations"
+        ],
+        "Resource": ["*"]
+    }]
+}
+
