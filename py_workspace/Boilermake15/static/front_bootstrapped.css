@@ -46,8 +46,9 @@ body {
 
 .description {
 	text-align: center;
+	line-height: 1.1;
 	font-size: 16px;
-	margin-top: 10px;
+	margin: 10px 0px;
 	font-family: Palatino Linotype;
 }
 
