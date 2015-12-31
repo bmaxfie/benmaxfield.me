@@ -9,7 +9,8 @@
     <meta name="description" content="Ben Maxfield's Personal Website">
   	<meta name="author" content="Ben Maxfield">
 
-	<link rel="stylesheet" href="{{ url_for('static', filename='front_bootstrapped.css', _external=True) }}">
+	<link rel="stylesheet" href="../static/front_bootstrapped.css">
+	<!-- {{ url_for('static', filename='front_bootstrapped.css', _external=True) }}"> -->
 	{% if githubCSS %}
 	  {{ githubCSS }}
 	{% endif %}

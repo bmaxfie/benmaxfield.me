@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/bmaxfie/Documents/PERSONALS/Website_Boilermake15/py_workspace/Boilermake15/venv"
+set -gx VIRTUAL_ENV "/home/bmaxfie/Documents/PERSONALS/Website_Boilermake15/py_workspace/PersonalWebsite15/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
