@@ -90,7 +90,7 @@ class Scraper():
         # Gets bmaxfie@Github public data and css stylesheet link.
         page = requests.get('https://github.com/bmaxfie')
         tree = html.fromstring(page.text)
-        self.GithubHTML = Markup(etree.tostring(tree.xpath('//div[@class="boxed-group flush"]')[1], pretty_print=True))
+        self.GithubHTML = Markup(etree.tostring(tree.xpath('//div[div[@id="contributions-calendar"]]')[0], pretty_print=True))
         GithubSize = page.__sizeof__() * 1000.0 / 1000 # SOMETHING IS WRONG HERE, see above comment
         
         strings = ""
