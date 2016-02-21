@@ -1,7 +1,7 @@
 #Created on Oct 17, 2015
 #@author: Ben Maxfield
 #
-#    RUN THIS (main.py) TO START THE WEB-APP!
+#    RUN THIS (application.py) TO START THE WEB-APP!
 #    This is the MAIN Flask web-app routing page.
 #
 
