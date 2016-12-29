@@ -11,7 +11,6 @@ from flask import Flask, render_template
 from scraper import Scraper
 ###
 
-
 app = Flask(__name__)
 application = app
 
@@ -22,7 +21,7 @@ scraper = Scraper()
 def getSDtimediff():
     secs = int((time() - scraper.SDtimestamp) % 60)
     mins = int((time() - scraper.SDtimestamp) / 60)
-    return `mins` + " mins, " + `secs` + " secs"
+    return str(mins) + " mins, " + str(secs) + " secs"
 
 # ROUTES AND RENDERS FRONT PAGE w/ all scraping data:
 @app.route('/')

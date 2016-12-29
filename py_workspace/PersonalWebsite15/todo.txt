@@ -1,0 +1,2 @@
+Insert "Github Contribution Calendar:" paragraph into div.js-contribution-calendar so it will fade in like the rest.
+Add better organized margins to the dashboard elements, and maybe some better background coloring and borders?
