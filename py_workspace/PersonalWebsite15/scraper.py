@@ -5,14 +5,14 @@
 #        * Schedule the updating of the web scraping service
 #            (scrapes: github.com/bmaxfie and ScienceDaily.com)
 #        * Perform the web scraping and html/xml parsing.
-#            -Identifies top 3 technology news links and saves 
+#            -Identifies top 3 technology news links and saves
 #                their titles and links.
 #            -Saves the timestamp of the most recent web scrape.
-#            -Parses the GitHub html to identify the user 
+#            -Parses the GitHub html to identify the user
 #                contibutions data container.
 #            -Parses the GitHub html to identify the css link,
 #                to properly style the container mentioned above.
-#        * Hold the console's script to reduce cluttering the HTML 
+#        * Hold the console's script to reduce cluttering the HTML
 #            that I will later need to refactor with Bootstrap.
 #
 
@@ -26,7 +26,7 @@ import feedparser
 ###
 
 class Scraper():
-    
+
     scheduler = None
     script = Markup('''
         <span id="script1">> python scraper.py<span id="pipe1">|</span><br></span>
@@ -77,7 +77,7 @@ class Scraper():
         scheduler = BackgroundScheduler()
         scheduler.start()
         scheduler.add_job(self.update, 'interval', hours=1)
-        
+
     def update(self):
         # Saves the top 3 article titles and links from ScienceDaily.com under the Technology category.
         feed = feedparser.parse('http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology?format=xml')
@@ -85,18 +85,23 @@ class Scraper():
             self.SDtitles[i] = feed.entries[i].title
             self.SDlinks[i] = feed.entries[i].link
         self.SDtimestamp = time()
-        SDsize = feed.__sizeof__() * 100.0 / 1000 # SOMETHING IS WRONG HERE, This XML is not ~508 Bytes... its at least 5 KB.
-        
+        SDsize = feed.__sizeof__() * 100.0 / 1000
+
         # Gets bmaxfie@Github public data and css stylesheet link.
         page = requests.get('https://github.com/bmaxfie')
         tree = html.fromstring(page.text)
-        self.GithubHTML = Markup(etree.tostring(tree.xpath('//div[div[@id="contributions-calendar"]]')[0], pretty_print=True))
-        GithubSize = page.__sizeof__() * 1000.0 / 1000 # SOMETHING IS WRONG HERE, see above comment
-        
+        calendar = tree.xpath('//div[@class="js-contribution-graph"]')[0]
+        # Insert <p> into subtree, gives our calendar a title.
+        calTitle = etree.Element("h4")
+        calTitle.text = "Github Contribution Calendar:"
+        calendar.insert(0, calTitle)
+        self.GithubHTML = Markup(etree.tostring(calendar, pretty_print=True))
+        GithubSize = page.text.__sizeof__() / 1000
+
         strings = ""
         for element in tree.xpath('//link[@rel="stylesheet"]'):
             strings = strings + etree.tostring(element, pretty_print=True)
         self.GithubCSS = Markup(strings)
-        
+
         self.script = self.script.format(SDsize, GithubSize)
-        
+
