@@ -1,0 +1,8 @@
+1. Create instance from benmaxfield.me AWS AMI.
+2. scp into home directory (home/ec2-user) the most recent .zip of benmaxfield.me. Copy over old code. (And make sure primary flask file is application.py).
+3. Make sure httpd and mod_wsgi-python27 are installed (didn't know I needed to include them in AMI, maybe do that later?).
+4. Keep app.wsgi in the folder it is in, but copy vhost.conf into /etc/httpd/conf.d/.
+5. Link folder 'flask' at /var/www/html/ to ~ or /home/ec2-user. Use command 'sudo ln -sT ~ /var/www/html/flask'
+6. Make sure /home/ec2-user has right permissions for folder open and read (chmod +xr /home/ec2-user).
+7. Start apache server with 'sudo apachectl start' (or restart).
+8. Profit?
