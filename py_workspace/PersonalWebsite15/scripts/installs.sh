@@ -9,3 +9,4 @@ sudo pip install Flask==0.11
 # May want to include these into the AMI if I ever have to do that again.
 
 sudo yum install httpd mod_wsgi-python27
+sudo yum install mod_ssl openssl

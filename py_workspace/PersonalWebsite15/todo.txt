@@ -1,0 +1,3 @@
+Confirm SSL Cert via email, and assign it to my benmaxfield.me.
+Import newest Resume and push it to EC2.
+Start work on WebRTC page!
