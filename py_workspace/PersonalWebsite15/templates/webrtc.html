@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Ben's File Share</title>
+  <meta name="description" content="Ben Maxfield's Personal File Share Portal">
+  <meta name="author" content="Ben Maxfield">
+
+  <link rel="stylesheet" href="../static/webrtc.css">
+  <!-- {{ url_for('static', filename='webrtc.css', _external=True) }}" -->
+
+  <!-- Bootstrap -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="{{ url_for('static', filename='bootstrap-3.3.5-dist/css/bootstrap.min.css', _external=True) }}" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="centered">
+        <button id="connectButton" name="connectButton" class="buttonleft">
+            Connect
+        </button>
+        <button id="disconnectButton" name="disconnectButton" class="buttonright">
+            Disconnect
+        </button>
+    </div>
+
+    <div class="centered">
+        <p>Upload file: </p>
+        <input id="fileIinput" type="file" name="upload" size="50">
+        <button id="sendButton" type="submit" value="Send">
+    </div>
+    <iframe id="downloadBox" style="display:none;"></iframe>
+
+  <script src="https://ajax.googleapis.com/ajac/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/webrtc.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
