@@ -69,26 +69,25 @@ body {
 	background-color: #000000;
 	font-family: Consolas, Courier, sans-serif;
 }
-
-@keyframes blink {
+@keyframes flash {
 	0% { opacity: 1; }
 	49% { opacity: 1; }
 	50% { opacity: 0; }
 	100% { opacity: 0; }
 }
-@-webkit-keyframes blink {
+@-webkit-keyframes flash {
 	0% { opacity: 1; }
 	49% { opacity: 1; }
 	50% { opacity: 0; }
 	100% { opacity: 0; }
 }
-@-moz-keyframes blink {
+@-moz-keyframes flash {
 	0% { opacity: 1; }
 	49% { opacity: 1; }
 	50% { opacity: 0; }
 	100% { opacity: 0; }
 }
-@-ms-keyframes blink {
+@-ms-keyframes flash {
 	0% { opacity: 1; }
 	49% { opacity: 1; }
 	50% { opacity: 0; }
@@ -164,13 +163,14 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
 #pipe1 {
 	opacity: 1;
-	-webkit-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
-    -moz-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
-    -ms-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
-    -o-animation: blink 2s linear 0.5s 5; /* Chrome, Safari, Opera */
-	animation: blink 2s linear 0.5s 5;
+	-webkit-animation: flash 2s linear 0.5s 5; /* Chrome, Safari, Opera */
+    -moz-animation: flash 2s linear 0.5s 5; /* Chrome, Safari, Opera */
+    -ms-animation: flash 2s linear 0.5s 5; /* Chrome, Safari, Opera */
+    -o-animation: flash 2s linear 0.5s 5; /* Chrome, Safari, Opera */
+	animation: flash 2s linear 0.5s 5;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
@@ -179,11 +179,11 @@ body {
 }
 #pipe2 {
 	opacity: 1;
-	-webkit-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -moz-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -ms-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-    -o-animation: blink 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
-	animation: blink 2s linear 0.5s infinite;
+	-webkit-animation: flash 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
+    -moz-animation: flash 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
+    -ms-animation: flash 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
+    -o-animation: flash 2s linear 0.5s infinite; /* Chrome, Safari, Opera */
+	animation: flash 2s linear 0.5s infinite;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;

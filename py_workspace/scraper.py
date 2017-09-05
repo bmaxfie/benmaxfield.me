@@ -23,6 +23,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from lxml import html, etree
 import requests
 import feedparser
+#from pytz import utc
 ###
 
 class Scraper():
@@ -74,7 +75,7 @@ class Scraper():
 
     def __init__(self):
         self.update()
-        scheduler = BackgroundScheduler()
+        scheduler = BackgroundScheduler()#timezone=utc)
         scheduler.start()
         scheduler.add_job(self.update, 'interval', hours=1)
 
